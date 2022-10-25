@@ -30,8 +30,10 @@ class LabScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
+        addChild(BookshelfNode(roomWidth))
         addChild(TableNode(roomWidth))
         addChild(ComputerNode(roomWidth, object: object!))
+        addChild(ThirdTableNode(roomWidth))
         addChild(SecondTableNode(roomWidth))
     }
 
