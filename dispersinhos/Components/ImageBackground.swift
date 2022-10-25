@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ImageBackground<C: View> : View {
     
     let imagePath: String
@@ -32,6 +30,7 @@ struct ImageBackground<C: View> : View {
                     childView
                 }
             )
+        
     }
     
 }
