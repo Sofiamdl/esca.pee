@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0016B734-8684-4817-8117-F332C54A003E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41207ABB-D4E6-40F4-BBE9-0D558B779764"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dispersinhos/Manager/CollectableManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "CollectableManager"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "41207ABB-D4E6-40F4-BBE9-0D558B779764 - 1e844ac1725c095e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dispersinhos.CollectableManager.deinit"
+                  moduleName = "dispersinhos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sml/Desktop/ADA/esca.pee/dispersinhos/Manager/CollectableManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "41207ABB-D4E6-40F4-BBE9-0D558B779764 - d4a49ddc847c5c29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dispersinhos.CollectableManager.__deallocating_deinit"
+                  moduleName = "dispersinhos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sml/Desktop/ADA/esca.pee/dispersinhos/Manager/CollectableManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

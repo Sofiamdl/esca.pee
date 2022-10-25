@@ -10,11 +10,14 @@ import SpriteKit
 class LabScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
-    
-    init(with roomWidth: CGFloat) {
+    var object: CollectableManager?
+
+    init(with roomWidth: CGFloat, object: CollectableManager) {
         super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height + 20))
         self.scaleMode = .fill
+        self.object = object
         self.roomWidth = roomWidth
+        print(object.adapter)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,7 +31,7 @@ class LabScene: SKScene {
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
         addChild(TableNode(roomWidth))
-        addChild(ComputerNode(roomWidth))
+        addChild(ComputerNode(roomWidth, object: object!))
         addChild(SecondTableNode(roomWidth))
     }
 

@@ -5,62 +5,31 @@
 //  Created by sml on 25/10/22.
 //
 
-import Foundation
+import SwiftUI
 
-struct Key {
-    var milk: Bool
-    var lostPiece: Bool
-    var adapter: Bool
-    var paper: Bool
-    var coffee: Bool
-    
-}
-
-
-class CollectableManager {
-
-    static let shared = CollectableManager()
-    private init(){}
-    
-    var keys: Key = Key(milk: false, lostPiece: false, adapter: false, paper: false, coffee: false)
-    
-    func setMilkTrue() {
-        keys.milk = true
+class CollectableManager: ObservableObject {
+    enum Coffee: String {
+        case powder
+        case full
+        case withMilk
+        case empty
     }
-    
-    func setMilkFalse() {
-        keys.milk = false
-    }
-    
-    func setLostPieceTrue() {
-        keys.lostPiece = true
-    }
-    
-    func setLostPieceFalse() {
-        keys.lostPiece = false
+
+    @Published var milk: Bool
+    @Published var lostPiece: Bool
+    @Published var adapter: Bool
+    @Published var paper: Bool
+    @Published var coffee: Coffee
+
+    init(milk: Bool, lostPiece: Bool, adapter: Bool, paper: Bool, coffee: Coffee) {
+        self.milk = milk
+        self.lostPiece = lostPiece
+        self.adapter = adapter
+        self.paper = paper
+        self.coffee = coffee
     }
     
     func adapterTrue() {
-        keys.adapter = true
-    }
-    
-    func adapterFalse() {
-        keys.adapter = false
-    }
-    
-    func paperTrue() {
-        keys.paper = true
-    }
-    
-    func paperFalse() {
-        keys.paper = false
-    }
-    
-    func coffeeTrue() {
-        keys.coffee = true
-    }
-    
-    func coffeeFalse() {
-        keys.coffee = false
+        self.adapter = true
     }
 }

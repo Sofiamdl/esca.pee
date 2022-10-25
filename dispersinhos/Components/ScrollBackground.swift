@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScrollBackground<C: View> : View {
-    
+
     typealias Children = C
     typealias NewChildren = () -> (Children)
     
