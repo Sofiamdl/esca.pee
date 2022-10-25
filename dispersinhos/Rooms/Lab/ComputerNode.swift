@@ -31,4 +31,8 @@ class ComputerNode: SKNode, AnyNode {
     func setupSize() {
         self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           print("oi")
+        }
 }
