@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
+		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
 		BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDE290830A300F0D8B6 /* AnyNode.swift */; };
 		BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBE3290834B000F0D8B6 /* ComputerNode.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
+		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
 		BF1CEBDE290830A300F0D8B6 /* AnyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNode.swift; sourceTree = "<group>"; };
 		BF1CEBE3290834B000F0D8B6 /* ComputerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerNode.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */,
 				BF1CEBE3290834B000F0D8B6 /* ComputerNode.swift */,
 				BF1CEBE52908351800F0D8B6 /* SecondeTableNode.swift */,
+				0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */,
+				0D3ABBFA2908650B0075223A /* BookshelfNode.swift */,
 			);
 			path = Lab;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
+				0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
+				0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
 				BF829362290227FA00CFC0F8 /* Lab.swift in Sources */,
