@@ -10,15 +10,15 @@ import SwiftUI
 
 struct WindowTool: View {
     
-    @EnvironmentObject var itemData: ItemObject
-    @State var putItem: Tool
+    @ObservedObject var itemData = ToolModel.shared
+    @Binding var putItem: Tool
     @State var width: CGFloat
     @State var height: CGFloat
     @State var x: CGFloat
     @State var y: CGFloat
     
     var body: some View {
-//
+
 //        if !itemData.itemArray.contains(putItem) && !putItem.isTaken {
 //            {
 //                Image(putItem.image).resizable()
@@ -26,15 +26,12 @@ struct WindowTool: View {
 //                .frame(minWidth: 0, maxWidth: width, minHeight: 0, maxHeight: height)
 //                .offset(x: x, y: y)
 //                .onTapGesture {
-//                    putItem.isTaken = true
-//                    addItem(item: putItem)
+////                    putItem.isTaken = true
+////                    addItem(item: putItem)
 //                    print(itemData.itemArray)
 //                }
 //        } else {}
-            ItemDock()
-        
-        
-        
+        ItemDock()
     }
     
     func addItem(item: Tool) {

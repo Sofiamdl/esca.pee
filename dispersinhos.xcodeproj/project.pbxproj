@@ -27,11 +27,8 @@
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
 		BFEDAA7D28FF221F00652C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */; };
 		C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E529085A3D0036CFB6 /* WindowTool.swift */; };
-		C0A427E82908606B0036CFB6 /* ItemObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E72908606B0036CFB6 /* ItemObject.swift */; };
 		C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E9290860870036CFB6 /* ItemDock.swift */; };
-		C0A427EC290860A10036CFB6 /* ToolsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427EB290860A10036CFB6 /* ToolsBar.swift */; };
 		C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427ED290860C40036CFB6 /* ToolModel.swift */; };
-		C0A427F0290864160036CFB6 /* WindowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427EF290864160036CFB6 /* WindowModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,11 +53,8 @@
 		BFEDAA7928FF221F00652C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0A427E529085A3D0036CFB6 /* WindowTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTool.swift; sourceTree = "<group>"; };
-		C0A427E72908606B0036CFB6 /* ItemObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemObject.swift; sourceTree = "<group>"; };
 		C0A427E9290860870036CFB6 /* ItemDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDock.swift; sourceTree = "<group>"; };
-		C0A427EB290860A10036CFB6 /* ToolsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsBar.swift; sourceTree = "<group>"; };
 		C0A427ED290860C40036CFB6 /* ToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolModel.swift; sourceTree = "<group>"; };
-		C0A427EF290864160036CFB6 /* WindowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,11 +154,8 @@
 				BF20CB3329070589003B3AA8 /* ImageBackground.swift */,
 				BF20CB3D29074FA1003B3AA8 /* RoomComponent.swift */,
 				C0A427E529085A3D0036CFB6 /* WindowTool.swift */,
-				C0A427E72908606B0036CFB6 /* ItemObject.swift */,
 				C0A427E9290860870036CFB6 /* ItemDock.swift */,
-				C0A427EB290860A10036CFB6 /* ToolsBar.swift */,
 				C0A427ED290860C40036CFB6 /* ToolModel.swift */,
-				C0A427EF290864160036CFB6 /* WindowModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,7 +273,6 @@
 			files = (
 				BF1CEBE62908351800F0D8B6 /* SecondeTableNode.swift in Sources */,
 				BF82936A290243B000CFC0F8 /* ImageConstants.swift in Sources */,
-				C0A427EC290860A10036CFB6 /* ToolsBar.swift in Sources */,
 				C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */,
 				BF82936429022B8900CFC0F8 /* Lockers.swift in Sources */,
 				BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */,
@@ -292,7 +282,6 @@
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
 				C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */,
-				C0A427F0290864160036CFB6 /* WindowModel.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
 				BF829362290227FA00CFC0F8 /* Lab.swift in Sources */,
@@ -301,7 +290,6 @@
 				BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */,
 				BFEDAA7628FF221C00652C50 /* dispersinhosApp.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
-				C0A427E82908606B0036CFB6 /* ItemObject.swift in Sources */,
 				C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
