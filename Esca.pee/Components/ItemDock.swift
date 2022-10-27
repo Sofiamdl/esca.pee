@@ -18,7 +18,7 @@ struct ItemDock: View {
                 ForEach (0 ..< object.itemArray.count, id: \.self) { index in
                     Image(object.itemArray[index].image)
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 0.1.vh, height: 0.1.vh)
                         .padding([.bottom, .top, .trailing, .leading], 10)
                         .background(Color.black.opacity(0.5))
                         .border(object.itemArray[index].isClicked ? .red : .clear, width: object.itemArray[index].isClicked ? 4 : 0)
