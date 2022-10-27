@@ -12,7 +12,7 @@ class LabScene: SKScene {
     let roomHeight: CGFloat = UIScreen.main.bounds.height
     
     init(with roomWidth: CGFloat) {
-        super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height + 20))
+        super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height))
         self.scaleMode = .fill
         self.roomWidth = roomWidth
     }

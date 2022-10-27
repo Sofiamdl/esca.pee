@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D04AB1C290AEA9D00176A62 /* Couch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB1B290AEA9D00176A62 /* Couch.swift */; };
+		0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB1D290AED8300176A62 /* CouchScene.swift */; };
+		0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB1F290B01E300176A62 /* CouchNode.swift */; };
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D04AB1B290AEA9D00176A62 /* Couch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couch.swift; sourceTree = "<group>"; };
+		0D04AB1D290AED8300176A62 /* CouchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchScene.swift; sourceTree = "<group>"; };
+		0D04AB1F290B01E300176A62 /* CouchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchNode.swift; sourceTree = "<group>"; };
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
@@ -66,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D04AB1A290AEA8000176A62 /* Couch */ = {
+			isa = PBXGroup;
+			children = (
+				0D04AB1B290AEA9D00176A62 /* Couch.swift */,
+				0D04AB1D290AED8300176A62 /* CouchScene.swift */,
+				0D04AB1F290B01E300176A62 /* CouchNode.swift */,
+			);
+			path = Couch;
+			sourceTree = "<group>";
+		};
 		BF1CEBDD2908309500F0D8B6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +147,7 @@
 		BF82936529022BEA00CFC0F8 /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				0D04AB1A290AEA8000176A62 /* Couch */,
 				BF1CEBE22908324900F0D8B6 /* Kitchen */,
 				BF1CEBE12908324100F0D8B6 /* Lockers */,
 				BF1CEBE02908322300F0D8B6 /* Lab */,
@@ -277,6 +294,8 @@
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
 				0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */,
+				0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */,
+				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
 				0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
@@ -284,6 +303,7 @@
 				BF829362290227FA00CFC0F8 /* Lab.swift in Sources */,
 				BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */,
 				BF20CB3C29072C1B003B3AA8 /* LabScene.swift in Sources */,
+				0D04AB1C290AEA9D00176A62 /* Couch.swift in Sources */,
 				BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */,
 				BFEDAA7628FF221C00652C50 /* dispersinhosApp.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,

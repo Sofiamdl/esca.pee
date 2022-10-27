@@ -10,9 +10,10 @@ import SwiftUI
 struct GameView: View {
     var body: some View {
         ScrollBackground({
-            HStack (alignment: .top){
+            HStack (alignment: .top,spacing: -0.5){
                     Lab()
 //                    Kitchen()
+                    Couch()
 //                    Lockers()
                 }
             .ignoresSafeArea()
