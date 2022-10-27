@@ -49,10 +49,10 @@ class LabScene: SKScene {
     func scrollBackground(){
         self.enumerateChildNodes(withName: "table", using: ({
             (node, error) in
-            // 1
+
             node.position.x -= 4
             print("node position x = \(node.position.x)")
-            // 2
+
             if node.position.x < -(self.scene?.size.width)! {
                 node.position.x += (self.scene?.size.width)! * 3
             }
