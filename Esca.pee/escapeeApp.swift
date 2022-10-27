@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct dispersinhosApp: App {
+struct escapeeApp: App {
     var body: some Scene {
         WindowGroup {
             GameView()

@@ -24,7 +24,7 @@
 		BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82936629022C9700CFC0F8 /* Kitchen.swift */; };
 		BF82936A290243B000CFC0F8 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF829369290243B000CFC0F8 /* ImageConstants.swift */; };
 		BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82936C29030B0E00CFC0F8 /* ClickableImage.swift */; };
-		BFEDAA7628FF221C00652C50 /* dispersinhosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* dispersinhosApp.swift */; };
+		BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* escapeeApp.swift */; };
 		BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7728FF221C00652C50 /* GameView.swift */; };
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
 		BFEDAA7D28FF221F00652C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */; };
@@ -51,8 +51,8 @@
 		BF82936629022C9700CFC0F8 /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
 		BF829369290243B000CFC0F8 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		BF82936C29030B0E00CFC0F8 /* ClickableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableImage.swift; sourceTree = "<group>"; };
-		BFEDAA7228FF221C00652C50 /* dispersinhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dispersinhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFEDAA7528FF221C00652C50 /* dispersinhosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dispersinhosApp.swift; sourceTree = "<group>"; };
+		BFEDAA7228FF221C00652C50 /* Esca.pee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esca.pee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEDAA7528FF221C00652C50 /* escapeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escapeeApp.swift; sourceTree = "<group>"; };
 		BFEDAA7728FF221C00652C50 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BFEDAA7928FF221F00652C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		BFEDAA6928FF221C00652C50 = {
 			isa = PBXGroup;
 			children = (
-				BFEDAA7428FF221C00652C50 /* dispersinhos */,
+				BFEDAA7428FF221C00652C50 /* Esca.pee */,
 				BFEDAA7328FF221C00652C50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -177,12 +177,12 @@
 		BFEDAA7328FF221C00652C50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFEDAA7228FF221C00652C50 /* dispersinhos.app */,
+				BFEDAA7228FF221C00652C50 /* Esca.pee.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFEDAA7428FF221C00652C50 /* dispersinhos */ = {
+		BFEDAA7428FF221C00652C50 /* Esca.pee */ = {
 			isa = PBXGroup;
 			children = (
 				BF1CEBE92908522E00F0D8B6 /* Manager */,
@@ -192,11 +192,11 @@
 				BF829368290243A300CFC0F8 /* Constants */,
 				BF33AE952907625600880121 /* Utils */,
 				BF20CB322907056F003B3AA8 /* Views */,
-				BFEDAA7528FF221C00652C50 /* dispersinhosApp.swift */,
+				BFEDAA7528FF221C00652C50 /* escapeeApp.swift */,
 				BFEDAA7928FF221F00652C50 /* Assets.xcassets */,
 				BFEDAA7B28FF221F00652C50 /* Preview Content */,
 			);
-			path = dispersinhos;
+			path = Esca.pee;
 			sourceTree = "<group>";
 		};
 		BFEDAA7B28FF221F00652C50 /* Preview Content */ = {
@@ -210,9 +210,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFEDAA7128FF221C00652C50 /* dispersinhos */ = {
+		BFEDAA7128FF221C00652C50 /* Esca.pee */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFEDAA8028FF221F00652C50 /* Build configuration list for PBXNativeTarget "dispersinhos" */;
+			buildConfigurationList = BFEDAA8028FF221F00652C50 /* Build configuration list for PBXNativeTarget "Esca.pee" */;
 			buildPhases = (
 				BFEDAA6E28FF221C00652C50 /* Sources */,
 				BFEDAA6F28FF221C00652C50 /* Frameworks */,
@@ -222,9 +222,9 @@
 			);
 			dependencies = (
 			);
-			name = dispersinhos;
+			name = Esca.pee;
 			productName = dispersinhos;
-			productReference = BFEDAA7228FF221C00652C50 /* dispersinhos.app */;
+			productReference = BFEDAA7228FF221C00652C50 /* Esca.pee.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFEDAA6D28FF221C00652C50 /* Build configuration list for PBXProject "dispersinhos" */;
+			buildConfigurationList = BFEDAA6D28FF221C00652C50 /* Build configuration list for PBXProject "Esca.pee" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,7 +255,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFEDAA7128FF221C00652C50 /* dispersinhos */,
+				BFEDAA7128FF221C00652C50 /* Esca.pee */,
 			);
 		};
 /* End PBXProject section */
@@ -296,7 +296,7 @@
 				BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */,
 				BF20CB3C29072C1B003B3AA8 /* LabScene.swift in Sources */,
 				BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */,
-				BFEDAA7628FF221C00652C50 /* dispersinhosApp.swift in Sources */,
+				BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
 				C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */,
 			);
@@ -426,7 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"dispersinhos/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Esca.pee/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UVYB4V5UN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -441,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = academy.s.dispersinhos;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.s.Esca.pee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -456,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"dispersinhos/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Esca.pee/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UVYB4V5UN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -471,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = academy.s.dispersinhos;
+				PRODUCT_BUNDLE_IDENTIFIER = academy.s.Esca.pee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -482,7 +482,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFEDAA6D28FF221C00652C50 /* Build configuration list for PBXProject "dispersinhos" */ = {
+		BFEDAA6D28FF221C00652C50 /* Build configuration list for PBXProject "Esca.pee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFEDAA7E28FF221F00652C50 /* Debug */,
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFEDAA8028FF221F00652C50 /* Build configuration list for PBXNativeTarget "dispersinhos" */ = {
+		BFEDAA8028FF221F00652C50 /* Build configuration list for PBXNativeTarget "Esca.pee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFEDAA8128FF221F00652C50 /* Debug */,
