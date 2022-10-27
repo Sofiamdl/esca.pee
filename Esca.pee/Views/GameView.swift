@@ -13,11 +13,11 @@ struct GameView: View {
     let dock = ItemDock()
     var body: some View {
         ScrollBackground({
-            HStack (alignment: .top){
+            HStack (alignment: .top,spacing: -0.5){
                     Lab()
-                Lab()
 //                    ItemDock()
 //                    Kitchen()
+                    Couch()
 //                    Lockers()
                 }
             .ignoresSafeArea()
