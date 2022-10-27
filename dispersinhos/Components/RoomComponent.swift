@@ -10,17 +10,18 @@ import SpriteKit
 
 
 struct RoomComponent: View {
-    
     typealias SetWidth = (CGFloat) -> ()
-    
+    @EnvironmentObject private var object: CollectableManager
+
     let imagePath: String
     let scene: SKScene
+    
     let setImageWidth: SetWidth
 
     var body: some View {
         ImageBackground({
             HStack{
-                SpriteView(scene: scene, options: [.allowsTransparency])
+                SpriteView(scene: scene, options: [.allowsTransparency]).environmentObject(object)
             }
 
         }, imagePath: imagePath)
@@ -29,9 +30,5 @@ struct RoomComponent: View {
                 Color.clear.onAppear { setImageWidth(proxy.size.width) }
             }
         )
-    }
-    
-    func testePrint() {
-        print("oi")
     }
 }

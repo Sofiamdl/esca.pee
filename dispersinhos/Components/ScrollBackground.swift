@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ScrollBackground<C: View> : View {
-    let childView: C
+
+    typealias Children = C
+    typealias NewChildren = () -> (Children)
     
-    init(_ childView: () -> (C)) {
+    let childView: Children
+    
+    init(_ childView: NewChildren) {
       self.childView = childView()
       UIScrollView.appearance().bounces = false
     }

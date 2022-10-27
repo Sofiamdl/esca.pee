@@ -18,7 +18,7 @@ struct WindowTool: View {
     @State var y: CGFloat
     
     var body: some View {
-
+        VStack {}
 //        if !itemData.itemArray.contains(putItem) && !putItem.isTaken {
 //            {
 //                Image(putItem.image).resizable()
@@ -31,7 +31,7 @@ struct WindowTool: View {
 //                    print(itemData.itemArray)
 //                }
 //        } else {}
-        ItemDock()
+//        ItemDock()
     }
     
     func addItem(item: Tool) {

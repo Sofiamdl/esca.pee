@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ImageBackground<C: View> : View {
-    
     let imagePath: String
     let childView: Children
-    
+
     typealias Children = C
     typealias NewChildren = () -> (Children)
 

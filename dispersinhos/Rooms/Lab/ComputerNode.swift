@@ -6,16 +6,19 @@
 //
 
 import SpriteKit
+import SwiftUI
 
 class ComputerNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
+    var object: CollectableManager?
 
-    init(_ roomWidth: CGFloat) {
+    init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COMPUTER)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
+        self.object = object
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
     }
@@ -33,6 +36,10 @@ class ComputerNode: SKNode, AnyNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("oi")
+        object!.adapterTrue()
+        self.removeFromParent()
+        // mandar esse objeto pro itemDock -- como?
+        // implementar isso em todos os coletáveis
+        
     }
 }

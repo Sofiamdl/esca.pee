@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct GameView: View {
+        @EnvironmentObject private var object: CollectableManager
+
     let dock = ItemDock()
     var body: some View {
         ScrollBackground({
             HStack (alignment: .top){
                     Lab()
+                Lab()
 //                    ItemDock()
 //                    Kitchen()
 //                    Lockers()
