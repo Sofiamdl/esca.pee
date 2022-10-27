@@ -20,5 +20,6 @@ class ImageConstants {
     let BOOKSHELF = "bookshelf"
     let COFFEEMUG = "coffee-mug"
     let COUCH = "couch"
-    
+    let PAPER = "paper"
+
 }

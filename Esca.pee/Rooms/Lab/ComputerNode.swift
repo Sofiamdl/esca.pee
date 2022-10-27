@@ -36,11 +36,7 @@ class ComputerNode: SKNode, AnyNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        object!.adapterTrue()
         self.removeFromParent()
         object!.addToArray(item: object!.adapter)
-        // mandar esse objeto pro itemDock -- como?
-        // implementar isso em todos os coletáveis
-        
     }
 }
