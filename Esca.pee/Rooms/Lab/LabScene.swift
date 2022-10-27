@@ -10,14 +10,15 @@ import SpriteKit
 class LabScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+    
     var object: CollectableManager?
-
-    init(with roomWidth: CGFloat, object: CollectableManager) {
-        super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height + 20))
+    
+    
+    init(with roomWidth: CGFloat, object: CollectableManager ) {
+        super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height))
         self.scaleMode = .fill
         self.object = object
         self.roomWidth = roomWidth
-        print(object.adapter)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -10,12 +10,14 @@ class ImageConstants {
     static let shared = ImageConstants()
     private init(){}
     
-    let BACKGROUND_LAB = "background-1"
+    let BACKGROUND_LAB = "background-lab"
+    let BACKGROUND_COUCH = "background-couch"
     let TEST_IMAGE = "chave-de-fenda"
     let TABLE = "table"
     let COMPUTER = "computer"
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
+    let COUCH = "couch"
     
 }
