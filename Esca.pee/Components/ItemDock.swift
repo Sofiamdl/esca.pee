@@ -15,23 +15,20 @@ struct ItemDock: View {
     var body: some View {
         ZStack {
             HStack (spacing: 5) {
-                if object.adapter.isTaken {
-                        Image("chave-de-fenda")
+                ForEach (0 ..< object.itemArray.count, id: \.self) { index in
+                    if object.adapter.isTaken {
+                        Image(object.itemArray[index].image)
                             .resizable()
-                            .frame(width: 45, height: 45)
+                            .frame(width: 30, height: 30)
+                            .padding([.bottom, .top, .trailing, .leading], 10)
                             .background(Color.black.opacity(0.5))
-                            .border(object.adapter.isClicked ? .red : .clear)
+                            .border(object.adapter.isClicked ? .red : .clear, width: object.adapter.isClicked ? 4 : 0)
                             .onTapGesture {
                                 object.adapter.isClicked = !object.adapter.isClicked
                             }
+                    }
                 }
             }
         }
     }
-    
-    // func to add item to window tool array
-    // add global array to code
-    //    func addItem(item: Tool) {
-    //        itemData.itemArray.append(item)
-    //    }
 }
