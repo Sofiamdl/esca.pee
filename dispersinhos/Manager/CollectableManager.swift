@@ -14,22 +14,24 @@ class CollectableManager: ObservableObject {
         case withMilk
         case empty
     }
-
-    @Published var milk: Bool
-    @Published var lostPiece: Bool
-    @Published var adapter: Bool
-    @Published var paper: Bool
-    @Published var coffee: Coffee
-
-    init(milk: Bool, lostPiece: Bool, adapter: Bool, paper: Bool, coffee: Coffee) {
-        self.milk = milk
-        self.lostPiece = lostPiece
-        self.adapter = adapter
-        self.paper = paper
-        self.coffee = coffee
+    
+    struct Collectable {
+        
+        var isClicked: Bool
+        var isTaken: Bool
+        
     }
+
+    @Published var milk: Collectable = Collectable(isClicked: false, isTaken: false)
+    @Published var lostPiece: Collectable = Collectable(isClicked: false, isTaken: false)
+    @Published var adapter: Collectable = Collectable(isClicked: false, isTaken: false)
+    @Published var paper: Collectable = Collectable(isClicked: false, isTaken: false)
+    @Published var coffee: Coffee = .empty
+
+    init () {}
     
     func adapterTrue() {
-        self.adapter = true
+        self.adapter.isTaken = true
+        self.milk.isTaken = true
     }
 }

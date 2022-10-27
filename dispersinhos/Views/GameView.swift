@@ -8,27 +8,27 @@
 import SwiftUI
 
 struct GameView: View {
-    @EnvironmentObject private var object: CollectableManager
+        @EnvironmentObject private var object: CollectableManager
 
+    let dock = ItemDock()
     var body: some View {
-        HStack {
-            ScrollBackground({
-                HStack (alignment: .top){
-                        Lab()
-    //                    Kitchen()
-    //                    Lockers()
-                    }
-                .ignoresSafeArea()
-                .frame(maxWidth:.infinity, maxHeight: .infinity)
-            }).overlay(
-                VStack (alignment: .leading) {
-                    if (object.adapter) {
-                        VStack{
-                            Image(ImageConstants.shared.COMPUTER)
-                        }.offset(x: 100, y: 100)
-                    }
-                })
-        }
+        ScrollBackground({
+            HStack (alignment: .top){
+                    Lab()
+                Lab()
+//                    ItemDock()
+//                    Kitchen()
+//                    Lockers()
+                }
+            .ignoresSafeArea()
+            .frame(maxWidth:.infinity, maxHeight: .infinity)
+        }).overlay(
+            ZStack {
+                dock
+            }.offset(x: 0, y: -UIScreen.main.bounds.height/2 + CGFloat(70))
+             .frame(height: UIScreen.main.bounds.height)
+
+        )
     }
 }
 

@@ -12,7 +12,7 @@ struct dispersinhosApp: App {
     var body: some Scene {
         WindowGroup {
             GameView()
-                .environmentObject(CollectableManager(milk: false, lostPiece: false, adapter: false, paper: false, coffee: .powder))
+                .environmentObject(CollectableManager())
         }
     }
 }

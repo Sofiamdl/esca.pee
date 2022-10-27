@@ -23,6 +23,7 @@ struct RoomComponent: View {
             HStack{
                 SpriteView(scene: scene, options: [.allowsTransparency]).environmentObject(object)
             }
+
         }, imagePath: imagePath)
         .background(
             GeometryReader { proxy in

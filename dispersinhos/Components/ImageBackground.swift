@@ -29,6 +29,7 @@ struct ImageBackground<C: View> : View {
                     childView
                 }
             )
+        
     }
     
 }
