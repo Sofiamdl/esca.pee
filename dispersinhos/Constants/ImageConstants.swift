@@ -17,5 +17,6 @@ class ImageConstants {
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
+    let COFFEEMUG = "coffee-mug"
     
 }

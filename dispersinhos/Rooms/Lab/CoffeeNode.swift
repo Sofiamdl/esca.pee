@@ -1,21 +1,22 @@
 //
-//  ComputerNode.swift
+//  CoffeeNode.swift
 //  dispersinhos
 //
-//  Created by sml on 25/10/22.
+//  Created by Guilherme Souza on 27/10/22.
 //
 
+import Foundation
 import SpriteKit
 import SwiftUI
 
-class ComputerNode: SKNode, AnyNode {
+class CoffeeNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
     var object: CollectableManager?
 
     init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COMPUTER)
+        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COFFEEMUG)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
         self.object = object
@@ -28,7 +29,7 @@ class ComputerNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.35.vw(roomWidth), y: 0.528.vh)
+        self.position = CGPoint(x: 0.25.vw(roomWidth), y: 0.528.vh)
     }
     
     func setupSize() {
