@@ -27,6 +27,8 @@ class ImageConstants {
     
     //Lockers Scene
     let TABLE_COUCH = "lockers-couch"
+    let CHAIRS = "chairs"
+    let POUF = "pouf"
     
     //Collectables
     let PAPER = "paper"

@@ -25,5 +25,7 @@ class LockersScene: SKScene {
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
         addChild(TableCouchNode(roomWidth))
+        addChild(ChairsNode(roomWidth))
+        addChild(PoufNode(roomWidth))
     }
 }

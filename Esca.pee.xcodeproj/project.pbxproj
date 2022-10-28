@@ -12,6 +12,8 @@
 		0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB1F290B01E300176A62 /* CouchNode.swift */; };
 		0D04AB22290C141900176A62 /* LockersScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB21290C141900176A62 /* LockersScene.swift */; };
 		0D04AB24290C221E00176A62 /* TableCouchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB23290C221E00176A62 /* TableCouchNode.swift */; };
+		0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB25290C378700176A62 /* ChairsNode.swift */; };
+		0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB27290C494C00176A62 /* PoufNode.swift */; };
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
@@ -45,6 +47,8 @@
 		0D04AB1F290B01E300176A62 /* CouchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchNode.swift; sourceTree = "<group>"; };
 		0D04AB21290C141900176A62 /* LockersScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockersScene.swift; sourceTree = "<group>"; };
 		0D04AB23290C221E00176A62 /* TableCouchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCouchNode.swift; sourceTree = "<group>"; };
+		0D04AB25290C378700176A62 /* ChairsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairsNode.swift; sourceTree = "<group>"; };
+		0D04AB27290C494C00176A62 /* PoufNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoufNode.swift; sourceTree = "<group>"; };
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				BF82936329022B8900CFC0F8 /* Lockers.swift */,
 				0D04AB21290C141900176A62 /* LockersScene.swift */,
 				0D04AB23290C221E00176A62 /* TableCouchNode.swift */,
+				0D04AB25290C378700176A62 /* ChairsNode.swift */,
+				0D04AB27290C494C00176A62 /* PoufNode.swift */,
 			);
 			path = Lockers;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */,
 				BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */,
 				BF20CB3E29074FA1003B3AA8 /* RoomComponent.swift in Sources */,
+				0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */,
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
@@ -329,6 +336,7 @@
 				0D04AB1C290AEA9D00176A62 /* Couch.swift in Sources */,
 				BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */,
 				BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */,
+				0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
 				C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */,
 			);
