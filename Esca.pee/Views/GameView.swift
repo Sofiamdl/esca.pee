@@ -18,7 +18,7 @@ struct GameView: View {
 //                    ItemDock()
 //                    Kitchen()
                     Couch()
-//                    Lockers()
+                    Lockers()
                 }
             .ignoresSafeArea()
             .frame(maxWidth:.infinity, maxHeight: .infinity)
