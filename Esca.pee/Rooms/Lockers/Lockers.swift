@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct Lockers: View {
+    @State private var imageWidth: CGFloat = 0
+    
     var body: some View {
-        VStack (alignment: .leading) {
-            Text("Oi Familia")
-                .background(.white)
-        }
+        RoomComponent(imagePath: ImageConstants.shared.BACKGROUND_LOCKERS, scene: LockersScene(with: imageWidth), setImageWidth: setWidth)
+    }
+    
+    func setWidth (_ imageWidth: CGFloat) {
+        self.imageWidth = imageWidth
     }
 }
