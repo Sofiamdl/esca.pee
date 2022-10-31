@@ -31,6 +31,9 @@
 		BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82936629022C9700CFC0F8 /* Kitchen.swift */; };
 		BF82936A290243B000CFC0F8 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF829369290243B000CFC0F8 /* ImageConstants.swift */; };
 		BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF82936C29030B0E00CFC0F8 /* ClickableImage.swift */; };
+		BFB2A2052910383A0074EF8F /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A2042910383A0074EF8F /* ZoomView.swift */; };
+		BFB2A207291039610074EF8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A206291039610074EF8F /* Coordinator.swift */; };
+		BFB2A20A291051540074EF8F /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A209291051540074EF8F /* ViewFactory.swift */; };
 		BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* escapeeApp.swift */; };
 		BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7728FF221C00652C50 /* GameView.swift */; };
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
@@ -71,6 +74,9 @@
 		BF82936629022C9700CFC0F8 /* Kitchen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen.swift; sourceTree = "<group>"; };
 		BF829369290243B000CFC0F8 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		BF82936C29030B0E00CFC0F8 /* ClickableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableImage.swift; sourceTree = "<group>"; };
+		BFB2A2042910383A0074EF8F /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
+		BFB2A206291039610074EF8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BFB2A209291051540074EF8F /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		BFEDAA7228FF221C00652C50 /* Esca.pee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esca.pee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDAA7528FF221C00652C50 /* escapeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escapeeApp.swift; sourceTree = "<group>"; };
 		BFEDAA7728FF221C00652C50 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1CEBEA2908525000F0D8B6 /* CollectableManager.swift */,
+				BFB2A206291039610074EF8F /* Coordinator.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -169,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				BFEDAA7728FF221C00652C50 /* GameView.swift */,
+				BFB2A2042910383A0074EF8F /* ZoomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +221,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		BFB2A2082910513D0074EF8F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				BFB2A209291051540074EF8F /* ViewFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
 		BFEDAA6928FF221C00652C50 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +248,7 @@
 		BFEDAA7428FF221C00652C50 /* Esca.pee */ = {
 			isa = PBXGroup;
 			children = (
+				BFB2A2082910513D0074EF8F /* Factories */,
 				BF1CEBE92908522E00F0D8B6 /* Manager */,
 				BF82936B29030ADD00CFC0F8 /* Components */,
 				BF82936529022BEA00CFC0F8 /* Rooms */,
@@ -336,6 +353,7 @@
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
+				BFB2A207291039610074EF8F /* Coordinator.swift in Sources */,
 				0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */,
 				0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
@@ -345,6 +363,7 @@
 				0D04AB22290C141900176A62 /* LockersScene.swift in Sources */,
 				C09E0D96291048770090495B /* TapeNode.swift in Sources */,
 				C09E0D8E291039660090495B /* AdapterNode.swift in Sources */,
+				BFB2A20A291051540074EF8F /* ViewFactory.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
 				0D04AB24290C221E00176A62 /* TableCouchNode.swift in Sources */,
@@ -358,6 +377,7 @@
 				BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */,
 				0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */,
 				C09E0D94291045EE0090495B /* PaperNode.swift in Sources */,
+				BFB2A2052910383A0074EF8F /* ZoomView.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,12 +507,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Esca.pee/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UVYB4V5UN;
+				DEVELOPMENT_TEAM = M3SKJK6V42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -517,12 +539,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Esca.pee/Preview Content\"";
-				DEVELOPMENT_TEAM = 4UVYB4V5UN;
+				DEVELOPMENT_TEAM = M3SKJK6V42;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

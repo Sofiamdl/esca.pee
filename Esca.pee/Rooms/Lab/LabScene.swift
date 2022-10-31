@@ -12,12 +12,14 @@ class LabScene: SKScene {
     let roomHeight: CGFloat = UIScreen.main.bounds.height
     
     var object: CollectableManager?
+    var coordinator: Coordinator?
+
     
-    
-    init(with roomWidth: CGFloat, object: CollectableManager ) {
+    init(with roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator ) {
         super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height))
         self.scaleMode = .fill
         self.object = object
+        self.coordinator = coordinator
         self.roomWidth = roomWidth
     }
     
@@ -41,7 +43,7 @@ class LabScene: SKScene {
         addChild(AdapterNode(roomWidth, object: object!))
         addChild(LunchboxNode(roomWidth, object: object!))
         addChild(ThirdTableNode(roomWidth))
-        addChild(SecondTableNode(roomWidth))
+        addChild(SecondTableNode(roomWidth, coordinator: coordinator!))
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
