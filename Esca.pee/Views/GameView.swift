@@ -17,8 +17,6 @@ struct GameView: View {
         ScrollBackground({
             HStack (alignment: .top,spacing: -0.5) {
                     Lab()
-//                    ItemDock()
-//                    Kitchen()
                     Couch()
                     Lockers()
                 }
@@ -27,7 +25,7 @@ struct GameView: View {
         }).overlay(
             ZStack {
                 dock
-            }.offset(x: 0, y: -UIScreen.main.bounds.height/2 + CGFloat(70))
+            }.offset(x: 0, y: -UIScreen.main.bounds.height/2 + CGFloat(55))
              .frame(height: UIScreen.main.bounds.height)
 
         )
