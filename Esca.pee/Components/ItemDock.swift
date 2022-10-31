@@ -24,6 +24,11 @@ struct ItemDock: View {
                         .border(object.itemArray[index].isClicked ? .red : .clear, width: object.itemArray[index].isClicked ? 4 : 0)
                         .onTapGesture {
                             object.changeClicked(index)
+                            if object.lunchbox.image == "lunchbox" && object.itemArray[index].isClicked {
+                                // testando função de fazer algo quando se clica no item no itemDock
+                                // possível uso: zoom
+                                print("papel")
+                            }
                         }
                 }
             }

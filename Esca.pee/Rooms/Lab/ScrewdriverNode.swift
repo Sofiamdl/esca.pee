@@ -1,21 +1,22 @@
 //
-//  ComputerNode.swift
-//  dispersinhos
+//  ScrewdriverNode.swift
+//  Esca.pee
 //
-//  Created by sml on 25/10/22.
+//  Created by Guilherme Souza on 31/10/22.
 //
 
+import Foundation
 import SpriteKit
 import SwiftUI
 
-class ComputerNode: SKNode, AnyNode {
+class ScrewdriverNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
     var object: CollectableManager?
 
     init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COMPUTER)
+        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.SCREWDRIVER)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
         self.object = object
@@ -28,15 +29,18 @@ class ComputerNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.35.vw(roomWidth), y: 0.528.vh)
+        self.position = CGPoint(x: 0.32.vw(roomWidth), y: 0.78.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
+        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.08.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeFromParent()
-        object!.addToArray(item: object!.computer)
+        object!.addToArray(item: object!.screwdriver)
+        // mandar esse objeto pro itemDock -- como?
+        // implementar isso em todos os coletáveis
+        
     }
 }

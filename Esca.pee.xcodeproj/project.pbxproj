@@ -36,7 +36,12 @@
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
 		BFEDAA7D28FF221F00652C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */; };
 		C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D89290AF9D30090495B /* CoffeeNode.swift */; };
-		C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E529085A3D0036CFB6 /* WindowTool.swift */; };
+		C09E0D8C291038AF0090495B /* ScrewdriverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8B291038AF0090495B /* ScrewdriverNode.swift */; };
+		C09E0D8E291039660090495B /* AdapterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8D291039660090495B /* AdapterNode.swift */; };
+		C09E0D902910397F0090495B /* LunchboxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8F2910397F0090495B /* LunchboxNode.swift */; };
+		C09E0D9229103F6C0090495B /* DominoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D9129103F6C0090495B /* DominoNode.swift */; };
+		C09E0D94291045EE0090495B /* PaperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D93291045EE0090495B /* PaperNode.swift */; };
+		C09E0D96291048770090495B /* TapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D95291048770090495B /* TapeNode.swift */; };
 		C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E9290860870036CFB6 /* ItemDock.swift */; };
 		C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427ED290860C40036CFB6 /* ToolModel.swift */; };
 /* End PBXBuildFile section */
@@ -72,7 +77,12 @@
 		BFEDAA7928FF221F00652C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C09E0D89290AF9D30090495B /* CoffeeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeNode.swift; sourceTree = "<group>"; };
-		C0A427E529085A3D0036CFB6 /* WindowTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTool.swift; sourceTree = "<group>"; };
+		C09E0D8B291038AF0090495B /* ScrewdriverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrewdriverNode.swift; sourceTree = "<group>"; };
+		C09E0D8D291039660090495B /* AdapterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterNode.swift; sourceTree = "<group>"; };
+		C09E0D8F2910397F0090495B /* LunchboxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchboxNode.swift; sourceTree = "<group>"; };
+		C09E0D9129103F6C0090495B /* DominoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoNode.swift; sourceTree = "<group>"; };
+		C09E0D93291045EE0090495B /* PaperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperNode.swift; sourceTree = "<group>"; };
+		C09E0D95291048770090495B /* TapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeNode.swift; sourceTree = "<group>"; };
 		C0A427E9290860870036CFB6 /* ItemDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDock.swift; sourceTree = "<group>"; };
 		C0A427ED290860C40036CFB6 /* ToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +127,12 @@
 				0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */,
 				0D3ABBFA2908650B0075223A /* BookshelfNode.swift */,
 				C09E0D89290AF9D30090495B /* CoffeeNode.swift */,
+				C09E0D8B291038AF0090495B /* ScrewdriverNode.swift */,
+				C09E0D8D291039660090495B /* AdapterNode.swift */,
+				C09E0D8F2910397F0090495B /* LunchboxNode.swift */,
+				C09E0D9129103F6C0090495B /* DominoNode.swift */,
+				C09E0D93291045EE0090495B /* PaperNode.swift */,
+				C09E0D95291048770090495B /* TapeNode.swift */,
 			);
 			path = Lab;
 			sourceTree = "<group>";
@@ -191,7 +207,6 @@
 				BF82936C29030B0E00CFC0F8 /* ClickableImage.swift */,
 				BF20CB3329070589003B3AA8 /* ImageBackground.swift */,
 				BF20CB3D29074FA1003B3AA8 /* RoomComponent.swift */,
-				C0A427E529085A3D0036CFB6 /* WindowTool.swift */,
 				C0A427E9290860870036CFB6 /* ItemDock.swift */,
 				C0A427ED290860C40036CFB6 /* ToolModel.swift */,
 			);
@@ -316,6 +331,7 @@
 				C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */,
 				BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */,
 				BF20CB3E29074FA1003B3AA8 /* RoomComponent.swift in Sources */,
+				C09E0D8C291038AF0090495B /* ScrewdriverNode.swift in Sources */,
 				0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */,
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
@@ -327,18 +343,22 @@
 				C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */,
 				0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */,
 				0D04AB22290C141900176A62 /* LockersScene.swift in Sources */,
+				C09E0D96291048770090495B /* TapeNode.swift in Sources */,
+				C09E0D8E291039660090495B /* AdapterNode.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
 				0D04AB24290C221E00176A62 /* TableCouchNode.swift in Sources */,
 				BF829362290227FA00CFC0F8 /* Lab.swift in Sources */,
+				C09E0D902910397F0090495B /* LunchboxNode.swift in Sources */,
 				BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */,
 				BF20CB3C29072C1B003B3AA8 /* LabScene.swift in Sources */,
 				0D04AB1C290AEA9D00176A62 /* Couch.swift in Sources */,
 				BF82936729022C9700CFC0F8 /* Kitchen.swift in Sources */,
+				C09E0D9229103F6C0090495B /* DominoNode.swift in Sources */,
 				BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */,
 				0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */,
+				C09E0D94291045EE0090495B /* PaperNode.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
-				C0A427E629085A3D0036CFB6 /* WindowTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

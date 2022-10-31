@@ -35,6 +35,11 @@ class LabScene: SKScene {
         addChild(TableNode(roomWidth))
         addChild(ComputerNode(roomWidth, object: object!))
         addChild(CoffeeNode(roomWidth, object: object!))
+        addChild(DominoNode(roomWidth, object: object!))
+        addChild(ScrewdriverNode(roomWidth, object: object!))
+        addChild(TapeNode(roomWidth, object: object!))
+        addChild(AdapterNode(roomWidth, object: object!))
+        addChild(LunchboxNode(roomWidth, object: object!))
         addChild(ThirdTableNode(roomWidth))
         addChild(SecondTableNode(roomWidth))
     }

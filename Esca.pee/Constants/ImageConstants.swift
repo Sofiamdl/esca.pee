@@ -33,6 +33,11 @@ class ImageConstants {
     //Collectables
     let PAPER = "paper"
     let COFFEEMUG = "coffee-mug"
-    let TEST_IMAGE = "chave-de-fenda"
+    let SCREWDRIVER = "chave-de-fenda"
+    let ADAPTER = "adapter"
+    let LUNCHBOX = "lunchbox"
+    // na vdd a lancheira só vai ter um on tap gesture que "abre" ela e libera o papel, que será o coletável
+    let DOMINO = "domino"
+    let TAPE = "tape"
 
 }
