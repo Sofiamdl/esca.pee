@@ -34,5 +34,9 @@ class ImageConstants {
     let PAPER = "paper"
     let COFFEEMUG = "coffee-mug"
     let TEST_IMAGE = "chave-de-fenda"
+    
+    //Zoom-screens
+    let ZOOM_TABLE = "zoom-table"
+
 
 }

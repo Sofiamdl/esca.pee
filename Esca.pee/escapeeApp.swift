@@ -10,7 +10,8 @@ import SwiftUI
 @main
 struct escapeeApp: App {
     @ObservedObject var coordinator = Coordinator()
-    
+    @ObservedObject var collectableManager = CollectableManager()
+
     init(){
          UINavigationBar.setAnimationsEnabled(false)
      }
@@ -25,8 +26,8 @@ struct escapeeApp: App {
                         
                     }
                 }
-                .environmentObject(CollectableManager())
                 .environmentObject(coordinator)
+                .environmentObject(collectableManager)
             } else {
                 GameView()
             }

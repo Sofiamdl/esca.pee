@@ -10,14 +10,12 @@ import SwiftUI
 struct GameView: View {
 
     @EnvironmentObject private var object: CollectableManager
-    @EnvironmentObject private var zoomViewManager: Coordinator
 
     let dock = ItemDock()
     var body: some View {
         ScrollBackground({
             HStack (alignment: .top,spacing: -0.5) {
                     Lab()
-//                    ItemDock()
 //                    Kitchen()
                     Couch()
                     Lockers()
