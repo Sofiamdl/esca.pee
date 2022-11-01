@@ -49,6 +49,9 @@
 		C09E0D9229103F6C0090495B /* DominoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D9129103F6C0090495B /* DominoNode.swift */; };
 		C09E0D94291045EE0090495B /* PaperNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D93291045EE0090495B /* PaperNode.swift */; };
 		C09E0D96291048770090495B /* TapeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D95291048770090495B /* TapeNode.swift */; };
+		C09E0D9A2911A00E0090495B /* Bathroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D992911A00E0090495B /* Bathroom.swift */; };
+		C09E0D9C2911A02A0090495B /* BathroomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D9B2911A02A0090495B /* BathroomScene.swift */; };
+		C09E0D9E2911A12D0090495B /* BathroomNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D9D2911A12D0090495B /* BathroomNode.swift */; };
 		C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427E9290860870036CFB6 /* ItemDock.swift */; };
 		C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A427ED290860C40036CFB6 /* ToolModel.swift */; };
 /* End PBXBuildFile section */
@@ -97,6 +100,9 @@
 		C09E0D9129103F6C0090495B /* DominoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoNode.swift; sourceTree = "<group>"; };
 		C09E0D93291045EE0090495B /* PaperNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperNode.swift; sourceTree = "<group>"; };
 		C09E0D95291048770090495B /* TapeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeNode.swift; sourceTree = "<group>"; };
+		C09E0D992911A00E0090495B /* Bathroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bathroom.swift; sourceTree = "<group>"; };
+		C09E0D9B2911A02A0090495B /* BathroomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomScene.swift; sourceTree = "<group>"; };
+		C09E0D9D2911A12D0090495B /* BathroomNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathroomNode.swift; sourceTree = "<group>"; };
 		C0A427E9290860870036CFB6 /* ItemDock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDock.swift; sourceTree = "<group>"; };
 		C0A427ED290860C40036CFB6 /* ToolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -211,6 +217,7 @@
 		BF82936529022BEA00CFC0F8 /* Rooms */ = {
 			isa = PBXGroup;
 			children = (
+				C09E0D9829119FFC0090495B /* Bathroom */,
 				0D04AB1A290AEA8000176A62 /* Couch */,
 				BF1CEBE22908324900F0D8B6 /* Kitchen */,
 				BF1CEBE12908324100F0D8B6 /* Lockers */,
@@ -289,6 +296,16 @@
 				BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C09E0D9829119FFC0090495B /* Bathroom */ = {
+			isa = PBXGroup;
+			children = (
+				C09E0D992911A00E0090495B /* Bathroom.swift */,
+				C09E0D9B2911A02A0090495B /* BathroomScene.swift */,
+				C09E0D9D2911A12D0090495B /* BathroomNode.swift */,
+			);
+			path = Bathroom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +387,7 @@
 				BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */,
 				BF20CB3E29074FA1003B3AA8 /* RoomComponent.swift in Sources */,
 				C09E0D8C291038AF0090495B /* ScrewdriverNode.swift in Sources */,
+				C09E0D9C2911A02A0090495B /* BathroomScene.swift in Sources */,
 				0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */,
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
@@ -381,6 +399,7 @@
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
 				C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */,
+				C09E0D9E2911A12D0090495B /* BathroomNode.swift in Sources */,
 				0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */,
 				0D04AB22290C141900176A62 /* LockersScene.swift in Sources */,
 				C09E0D96291048770090495B /* TapeNode.swift in Sources */,
@@ -390,6 +409,7 @@
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
 				0D04AB24290C221E00176A62 /* TableCouchNode.swift in Sources */,
 				BF829362290227FA00CFC0F8 /* Lab.swift in Sources */,
+				C09E0D9A2911A00E0090495B /* Bathroom.swift in Sources */,
 				C09E0D902910397F0090495B /* LunchboxNode.swift in Sources */,
 				BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */,
 				BF20CB3C29072C1B003B3AA8 /* LabScene.swift in Sources */,

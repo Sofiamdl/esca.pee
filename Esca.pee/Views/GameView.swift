@@ -17,6 +17,7 @@ struct GameView: View {
             HStack (alignment: .top,spacing: -0.5) {
                     Lab()
                     Couch()
+                    Bathroom()
                     Lockers()
                 }
             .ignoresSafeArea()

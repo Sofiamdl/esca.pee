@@ -14,6 +14,7 @@ class ImageConstants {
     let BACKGROUND_LAB = "background-lab"
     let BACKGROUND_COUCH = "background-couch"
     let BACKGROUND_LOCKERS = "background-lockers"
+    let BACKGROUND_BATHROOM = "background-bathroom"
     
     //Lab Scene
     let TABLE = "table"
@@ -21,6 +22,7 @@ class ImageConstants {
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
+    let DOOR = "door"
     
     //Couch Scene
     let COUCH = "couch"
