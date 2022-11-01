@@ -16,12 +16,15 @@ class ImageConstants {
     let BACKGROUND_LOCKERS = "background-lockers"
     let BACKGROUND_KITCHEN = "background-kitchen"
 
+    let BACKGROUND_BATHROOM = "background-bathroom"
+    
     //Lab Scene
     let TABLE = "table"
     let COMPUTER = "computer"
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
+    let DOOR = "door"
     
     //Couch Scene
     let COUCH = "couch"
@@ -30,6 +33,8 @@ class ImageConstants {
     let TABLE_COUCH = "lockers-couch"
     let CHAIRS = "chairs"
     let POUF = "pouf"
+    let LAMPS = "lockers-lamps"
+    let LOCKERS = "lockers"
     
     //Collectables
     let PAPER = "paper"

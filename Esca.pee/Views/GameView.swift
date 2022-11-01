@@ -18,6 +18,7 @@ struct GameView: View {
                     Kitchen()
                     Lab()
                     Couch()
+                    Bathroom()
                     Lockers()
                 }
             .ignoresSafeArea()

@@ -1,14 +1,14 @@
 //
-//  LockersScene.swift
+//  BathroomScene.swift
 //  Esca.pee
 //
-//  Created by LoreVilaca on 28/10/22.
+//  Created by Guilherme Souza on 01/11/22.
 //
 
 import SwiftUI
 import SpriteKit
 
-class LockersScene: SKScene {
+class BathroomScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
     
@@ -17,17 +17,16 @@ class LockersScene: SKScene {
         self.scaleMode = .fill
         self.roomWidth = roomWidth
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
     override func didMove(to view: SKView) {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(LockersNode(roomWidth))
-//        addChild(LampsNode(roomWidth))
-        addChild(TableCouchNode(roomWidth))
-        addChild(ChairsNode(roomWidth))
-        addChild(PoufNode(roomWidth))
+        addChild(BathroomNode(roomWidth))
     }
+    
 }

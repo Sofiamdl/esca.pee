@@ -1,19 +1,19 @@
 //
-//  ChairsNode.swift
+//  BathroomNode.swift
 //  Esca.pee
 //
-//  Created by LoreVilaca on 28/10/22.
+//  Created by Guilherme Souza on 01/11/22.
 //
 
 import SpriteKit
 
-class ChairsNode: SKNode, AnyNode {
+class BathroomNode: SKNode, AnyNode {
     private var image: SKSpriteNode?
     private var roomWidth: CGFloat!
     
-    init(_ roomWidth: CGFloat) {
+    init (_ roomWidth: CGFloat){
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.CHAIRS)
+        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.DOOR)
         self.roomWidth = roomWidth
         
         setupNode()
@@ -25,10 +25,10 @@ class ChairsNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.48.vw(roomWidth), y: 0.19.vh)
+        self.position = CGPoint(x: 0.5.vw(roomWidth), y: 0.62.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.22.vw(roomWidth), height: 0.43.vh)
+        self.image!.size = CGSize(width: 0.13.vw(roomWidth), height: 0.599.vh)
     }
 }
