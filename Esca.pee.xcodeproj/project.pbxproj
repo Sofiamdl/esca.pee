@@ -20,6 +20,7 @@
 		0D04AB33291041EA00176A62 /* TilePuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB32291041EA00176A62 /* TilePuzzleView.swift */; };
 		0D04AB3A29119D1B00176A62 /* LockersNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3929119D1B00176A62 /* LockersNode.swift */; };
 		0D04AB3C29119D4400176A62 /* LampsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3B29119D4400176A62 /* LampsNode.swift */; };
+		0D04AB3E2911A8C400176A62 /* NotebookNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3D2911A8C400176A62 /* NotebookNode.swift */; };
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
@@ -72,6 +73,7 @@
 		0D04AB32291041EA00176A62 /* TilePuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilePuzzleView.swift; sourceTree = "<group>"; };
 		0D04AB3929119D1B00176A62 /* LockersNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockersNode.swift; sourceTree = "<group>"; };
 		0D04AB3B29119D4400176A62 /* LampsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampsNode.swift; sourceTree = "<group>"; };
+		0D04AB3D2911A8C400176A62 /* NotebookNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookNode.swift; sourceTree = "<group>"; };
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				0D04AB27290C494C00176A62 /* PoufNode.swift */,
 				0D04AB3929119D1B00176A62 /* LockersNode.swift */,
 				0D04AB3B29119D4400176A62 /* LampsNode.swift */,
+				0D04AB3D2911A8C400176A62 /* NotebookNode.swift */,
 			);
 			path = Lockers;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */,
 				0D04AB2D291040B000176A62 /* Board.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
+				0D04AB3E2911A8C400176A62 /* NotebookNode.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
 				C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */,
 				C09E0D9E2911A12D0090495B /* BathroomNode.swift in Sources */,

@@ -31,6 +31,7 @@ class ImageConstants {
     let TABLE_COUCH = "lockers-couch"
     let CHAIRS = "chairs"
     let POUF = "pouf"
+    let NOTEBOOK = "notebook"
     let LAMPS = "lockers-lamps"
     let LOCKERS = "lockers"
     
