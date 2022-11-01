@@ -7,9 +7,22 @@
 
 import SwiftUI
 
+struct DefaultsKeys {
+    static let keyOne = "firstStringKey"
+    static let keyTwo = "secondStringKey"
+}
+
 class CollectableManager: ObservableObject {
     
-    init () {}
+    init () {
+        let defaults = UserDefaults.standard
+        if let elementOne = defaults.array(forKey: DefaultsKeys.keyOne) {
+            for element in elementOne {
+                itemArray.append(Collectable(isClicked: false, image: element as! String))
+                itemArrayAux.append(element as! String)
+            }
+        }
+    }
 
 //    enum Coffee: String {
 //        case powder
@@ -30,6 +43,7 @@ class CollectableManager: ObservableObject {
 //    }
     
     @Published var itemArray: [Collectable] = []
+    var itemArrayAux: [String] = []
 
 
     @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
@@ -45,9 +59,13 @@ class CollectableManager: ObservableObject {
     
     func addToArray(item: Collectable) {
         itemArray.append(item)
+        itemArrayAux.append(item.image)
+        let defaults = UserDefaults.standard
+        defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
     }
     
     func changeClicked(_ index: Int) {
+        print(String(describing:itemArray))
         var isClicked = false
         
         for (i, _) in itemArray.enumerated() {
