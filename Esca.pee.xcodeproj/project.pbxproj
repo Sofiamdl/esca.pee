@@ -40,6 +40,14 @@
 		BFB2A2052910383A0074EF8F /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A2042910383A0074EF8F /* ZoomView.swift */; };
 		BFB2A207291039610074EF8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A206291039610074EF8F /* Coordinator.swift */; };
 		BFB2A20A291051540074EF8F /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A209291051540074EF8F /* ViewFactory.swift */; };
+		BFB2A20E291197F80074EF8F /* KitchenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A20D291197F80074EF8F /* KitchenScene.swift */; };
+		BFB2A2102911997E0074EF8F /* SecondeBalconyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A20F2911997E0074EF8F /* SecondeBalconyNode.swift */; };
+		BFB2A21229119C0F0074EF8F /* BalconyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21129119C0F0074EF8F /* BalconyNode.swift */; };
+		BFB2A21429119D8F0074EF8F /* TrashNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21329119D8F0074EF8F /* TrashNode.swift */; };
+		BFB2A21629119D9E0074EF8F /* TableKitchenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21529119D9E0074EF8F /* TableKitchenNode.swift */; };
+		BFB2A21829119DBC0074EF8F /* MicrowaveNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21729119DBC0074EF8F /* MicrowaveNode.swift */; };
+		BFB2A21A29119DFF0074EF8F /* RefrigeratorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21929119DFF0074EF8F /* RefrigeratorNode.swift */; };
+		BFB2A21C29119F340074EF8F /* CabinetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21B29119F340074EF8F /* CabinetNode.swift */; };
 		BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* escapeeApp.swift */; };
 		BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7728FF221C00652C50 /* GameView.swift */; };
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
@@ -92,6 +100,14 @@
 		BFB2A2042910383A0074EF8F /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		BFB2A206291039610074EF8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		BFB2A209291051540074EF8F /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		BFB2A20D291197F80074EF8F /* KitchenScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenScene.swift; sourceTree = "<group>"; };
+		BFB2A20F2911997E0074EF8F /* SecondeBalconyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondeBalconyNode.swift; sourceTree = "<group>"; };
+		BFB2A21129119C0F0074EF8F /* BalconyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalconyNode.swift; sourceTree = "<group>"; };
+		BFB2A21329119D8F0074EF8F /* TrashNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashNode.swift; sourceTree = "<group>"; };
+		BFB2A21529119D9E0074EF8F /* TableKitchenNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKitchenNode.swift; sourceTree = "<group>"; };
+		BFB2A21729119DBC0074EF8F /* MicrowaveNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrowaveNode.swift; sourceTree = "<group>"; };
+		BFB2A21929119DFF0074EF8F /* RefrigeratorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrigeratorNode.swift; sourceTree = "<group>"; };
+		BFB2A21B29119F340074EF8F /* CabinetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetNode.swift; sourceTree = "<group>"; };
 		BFEDAA7228FF221C00652C50 /* Esca.pee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esca.pee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDAA7528FF221C00652C50 /* escapeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escapeeApp.swift; sourceTree = "<group>"; };
 		BFEDAA7728FF221C00652C50 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -190,6 +206,14 @@
 			isa = PBXGroup;
 			children = (
 				BF82936629022C9700CFC0F8 /* Kitchen.swift */,
+				BFB2A20D291197F80074EF8F /* KitchenScene.swift */,
+				BFB2A21129119C0F0074EF8F /* BalconyNode.swift */,
+				BFB2A20F2911997E0074EF8F /* SecondeBalconyNode.swift */,
+				BFB2A21329119D8F0074EF8F /* TrashNode.swift */,
+				BFB2A21529119D9E0074EF8F /* TableKitchenNode.swift */,
+				BFB2A21729119DBC0074EF8F /* MicrowaveNode.swift */,
+				BFB2A21929119DFF0074EF8F /* RefrigeratorNode.swift */,
+				BFB2A21B29119F340074EF8F /* CabinetNode.swift */,
 			);
 			path = Kitchen;
 			sourceTree = "<group>";
@@ -391,6 +415,7 @@
 				0D04AB2F2910415D00176A62 /* BoardConstants.swift in Sources */,
 				BF82936429022B8900CFC0F8 /* Lockers.swift in Sources */,
 				C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */,
+				BFB2A21429119D8F0074EF8F /* TrashNode.swift in Sources */,
 				BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */,
 				BF20CB3E29074FA1003B3AA8 /* RoomComponent.swift in Sources */,
 				C09E0D8C291038AF0090495B /* ScrewdriverNode.swift in Sources */,
@@ -400,12 +425,18 @@
 				BF33AE972907626700880121 /* CGFloat+.swift in Sources */,
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
 				BFB2A207291039610074EF8F /* Coordinator.swift in Sources */,
+				BFB2A21A29119DFF0074EF8F /* RefrigeratorNode.swift in Sources */,
 				0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */,
 				0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */,
+				BFB2A21829119DBC0074EF8F /* MicrowaveNode.swift in Sources */,
 				0D04AB2D291040B000176A62 /* Board.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
+				BFB2A2102911997E0074EF8F /* SecondeBalconyNode.swift in Sources */,
+				BFB2A21229119C0F0074EF8F /* BalconyNode.swift in Sources */,
+				BFB2A21629119D9E0074EF8F /* TableKitchenNode.swift in Sources */,
 				BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */,
 				C0A427EA290860870036CFB6 /* ItemDock.swift in Sources */,
+				BFB2A21C29119F340074EF8F /* CabinetNode.swift in Sources */,
 				C09E0D9E2911A12D0090495B /* BathroomNode.swift in Sources */,
 				0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */,
 				0D04AB22290C141900176A62 /* LockersScene.swift in Sources */,
@@ -431,6 +462,7 @@
 				C09E0D94291045EE0090495B /* PaperNode.swift in Sources */,
 				BFB2A2052910383A0074EF8F /* ZoomView.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
+				BFB2A20E291197F80074EF8F /* KitchenScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
