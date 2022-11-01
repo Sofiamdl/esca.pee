@@ -9,10 +9,28 @@ import SwiftUI
 
 @main
 struct escapeeApp: App {
+    @ObservedObject var coordinator = Coordinator()
+    @ObservedObject var collectableManager = CollectableManager()
+
+    init(){
+         UINavigationBar.setAnimationsEnabled(false)
+     }
+    
     var body: some Scene {
         WindowGroup {
-            GameView()
-                .environmentObject(CollectableManager())
+            if #available(iOS 16.0, *) {
+                NavigationStack(path: $coordinator.path) {
+                    GameView()
+                    .navigationDestination(for: Destination.self) { destination in
+                        ViewFactory.viewForDestination(destination)
+                        
+                    }
+                }
+                .environmentObject(coordinator)
+                .environmentObject(collectableManager)
+            } else {
+                GameView()
+            }
         }
     }
 }
