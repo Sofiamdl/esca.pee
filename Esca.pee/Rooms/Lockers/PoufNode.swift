@@ -26,11 +26,11 @@ class PoufNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.12.vw(roomWidth), y: 0.23.vh)
+        self.position = CGPoint(x: 0.16.vw(roomWidth), y: 0.20.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.25.vw(roomWidth), height: 0.37.vh)
+        self.image!.size = CGSize(width: 0.25.vw(roomWidth), height: 0.35.vh)
     }
     
     

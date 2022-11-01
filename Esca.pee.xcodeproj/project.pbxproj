@@ -18,6 +18,8 @@
 		0D04AB2F2910415D00176A62 /* BoardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB2E2910415D00176A62 /* BoardConstants.swift */; };
 		0D04AB31291041BC00176A62 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB30291041BC00176A62 /* Errors.swift */; };
 		0D04AB33291041EA00176A62 /* TilePuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB32291041EA00176A62 /* TilePuzzleView.swift */; };
+		0D04AB3A29119D1B00176A62 /* LockersNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3929119D1B00176A62 /* LockersNode.swift */; };
+		0D04AB3C29119D4400176A62 /* LampsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3B29119D4400176A62 /* LampsNode.swift */; };
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
@@ -65,6 +67,8 @@
 		0D04AB2E2910415D00176A62 /* BoardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardConstants.swift; sourceTree = "<group>"; };
 		0D04AB30291041BC00176A62 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		0D04AB32291041EA00176A62 /* TilePuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilePuzzleView.swift; sourceTree = "<group>"; };
+		0D04AB3929119D1B00176A62 /* LockersNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockersNode.swift; sourceTree = "<group>"; };
+		0D04AB3B29119D4400176A62 /* LampsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampsNode.swift; sourceTree = "<group>"; };
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				0D04AB23290C221E00176A62 /* TableCouchNode.swift */,
 				0D04AB25290C378700176A62 /* ChairsNode.swift */,
 				0D04AB27290C494C00176A62 /* PoufNode.swift */,
+				0D04AB3929119D1B00176A62 /* LockersNode.swift */,
+				0D04AB3B29119D4400176A62 /* LampsNode.swift */,
 			);
 			path = Lockers;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1CEBE62908351800F0D8B6 /* SecondeTableNode.swift in Sources */,
+				0D04AB3C29119D4400176A62 /* LampsNode.swift in Sources */,
 				BF82936A290243B000CFC0F8 /* ImageConstants.swift in Sources */,
 				C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */,
 				0D04AB2F2910415D00176A62 /* BoardConstants.swift in Sources */,
@@ -398,6 +405,7 @@
 				C09E0D9229103F6C0090495B /* DominoNode.swift in Sources */,
 				BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */,
 				0D04AB31291041BC00176A62 /* Errors.swift in Sources */,
+				0D04AB3A29119D1B00176A62 /* LockersNode.swift in Sources */,
 				0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */,
 				0D04AB33291041EA00176A62 /* TilePuzzleView.swift in Sources */,
 				C09E0D94291045EE0090495B /* PaperNode.swift in Sources */,
