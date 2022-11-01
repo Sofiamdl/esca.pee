@@ -47,9 +47,13 @@ class CollectableManager: ObservableObject {
 
 
     @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
-    @Published var lostPiece: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.TEST_IMAGE)
-    @Published var adapter: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COMPUTER)
+    @Published var screwdriver: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.SCREWDRIVER)
+    @Published var adapter: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.ADAPTER)
     @Published var paper: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.PAPER)
+    @Published var lunchbox: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.LUNCHBOX)
+    @Published var computer: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.COMPUTER)
+    @Published var domino: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.DOMINO)
+    @Published var tape: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.TAPE)
 //    @Published var coffee: Coffee = .empty
 
     

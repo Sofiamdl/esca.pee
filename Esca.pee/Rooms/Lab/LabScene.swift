@@ -29,6 +29,11 @@ class LabScene: SKScene {
         if (!(object.itemArray.contains(where: {$0.image == object.milk.image}))) {
             addChild(CoffeeNode(roomWidth, object: object))
         }
+        addChild(DominoNode(roomWidth, object: object))
+        addChild(ScrewdriverNode(roomWidth, object: object))
+        addChild(TapeNode(roomWidth, object: object))
+        addChild(AdapterNode(roomWidth, object: object))
+        addChild(LunchboxNode(roomWidth, object: object))
         addChild(ThirdTableNode(roomWidth))
         addChild(SecondTableNode(roomWidth, coordinator: coordinator))
     }
@@ -43,7 +48,6 @@ class LabScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
