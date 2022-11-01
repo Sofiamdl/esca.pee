@@ -14,7 +14,7 @@ struct ZoomView: View {
         Image(ImageConstants.shared.ZOOM_TABLE)
             .resizable()
             .scaledToFit()
-            .frame(minWidth: UIScreen.main.bounds.width + 30, minHeight: UIScreen.main.bounds.height + 30)
+            .frame(minWidth: UIScreen.main.bounds.width + 20, minHeight: UIScreen.main.bounds.height + 30)
             .overlay(
                 ZStack {
                     dock

@@ -21,6 +21,16 @@ class LabScene: SKScene {
         self.object = object
         self.coordinator = coordinator
         self.roomWidth = roomWidth
+        addChild(BookshelfNode(roomWidth))
+        addChild(TableNode(roomWidth))
+        if (!(object.itemArray.contains(where: {$0.image == object.adapter.image}))) {
+            addChild(ComputerNode(roomWidth, object: object))
+        }
+        if (!(object.itemArray.contains(where: {$0.image == object.milk.image}))) {
+            addChild(CoffeeNode(roomWidth, object: object))
+        }
+        addChild(ThirdTableNode(roomWidth))
+        addChild(SecondTableNode(roomWidth, coordinator: coordinator))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -33,12 +43,7 @@ class LabScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(BookshelfNode(roomWidth))
-        addChild(TableNode(roomWidth))
-        addChild(ComputerNode(roomWidth, object: object!))
-        addChild(CoffeeNode(roomWidth, object: object!))
-        addChild(ThirdTableNode(roomWidth))
-        addChild(SecondTableNode(roomWidth, coordinator: coordinator!))
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
