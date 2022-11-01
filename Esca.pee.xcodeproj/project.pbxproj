@@ -14,7 +14,6 @@
 		0D04AB24290C221E00176A62 /* TableCouchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB23290C221E00176A62 /* TableCouchNode.swift */; };
 		0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB25290C378700176A62 /* ChairsNode.swift */; };
 		0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB27290C494C00176A62 /* PoufNode.swift */; };
-		0D04AB2A2910400D00176A62 /* TilePuzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB292910400D00176A62 /* TilePuzzle.swift */; };
 		0D04AB2D291040B000176A62 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB2C291040B000176A62 /* Board.swift */; };
 		0D04AB2F2910415D00176A62 /* BoardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB2E2910415D00176A62 /* BoardConstants.swift */; };
 		0D04AB31291041BC00176A62 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB30291041BC00176A62 /* Errors.swift */; };
@@ -62,7 +61,6 @@
 		0D04AB23290C221E00176A62 /* TableCouchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCouchNode.swift; sourceTree = "<group>"; };
 		0D04AB25290C378700176A62 /* ChairsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairsNode.swift; sourceTree = "<group>"; };
 		0D04AB27290C494C00176A62 /* PoufNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoufNode.swift; sourceTree = "<group>"; };
-		0D04AB292910400D00176A62 /* TilePuzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilePuzzle.swift; sourceTree = "<group>"; };
 		0D04AB2C291040B000176A62 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		0D04AB2E2910415D00176A62 /* BoardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardConstants.swift; sourceTree = "<group>"; };
 		0D04AB30291041BC00176A62 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		0D04AB2B2910405300176A62 /* TilePuzzle */ = {
 			isa = PBXGroup;
 			children = (
-				0D04AB292910400D00176A62 /* TilePuzzle.swift */,
 				0D04AB2C291040B000176A62 /* Board.swift */,
 				0D04AB2E2910415D00176A62 /* BoardConstants.swift */,
 				0D04AB30291041BC00176A62 /* Errors.swift */,
@@ -379,7 +376,6 @@
 				BF20CB3429070589003B3AA8 /* ImageBackground.swift in Sources */,
 				BFB2A207291039610074EF8F /* Coordinator.swift in Sources */,
 				0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */,
-				0D04AB2A2910400D00176A62 /* TilePuzzle.swift in Sources */,
 				0D04AB1E290AED8300176A62 /* CouchScene.swift in Sources */,
 				0D04AB2D291040B000176A62 /* Board.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,

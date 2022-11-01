@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Destination: String {
-    case zoomView
+    case tilePuzzle
     case secondPage
 }
 
@@ -20,8 +20,8 @@ class Coordinator: ObservableObject {
         path.removeLast(path.count)
     }
 
-    func zoomView() {
-        path.append(Destination.zoomView)
+    func tilePuzzle() {
+        path.append(Destination.tilePuzzle)
     }
 
     func tapOnSecondPage() {
