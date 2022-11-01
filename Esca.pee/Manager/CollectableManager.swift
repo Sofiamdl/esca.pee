@@ -54,6 +54,7 @@ class CollectableManager: ObservableObject {
     @Published var computer: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.COMPUTER)
     @Published var domino: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.DOMINO)
     @Published var tape: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.TAPE)
+    @Published var key: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.KEY)
 //    @Published var coffee: Coffee = .empty
 
     

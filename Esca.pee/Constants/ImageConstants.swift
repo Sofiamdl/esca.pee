@@ -15,9 +15,8 @@ class ImageConstants {
     let BACKGROUND_COUCH = "background-couch"
     let BACKGROUND_LOCKERS = "background-lockers"
     let BACKGROUND_KITCHEN = "background-kitchen"
-
     let BACKGROUND_BATHROOM = "background-bathroom"
-    
+    let BACKGROUND_LOCKER_SCREEN = "background-locker"
     //Lab Scene
     let TABLE = "table"
     let COMPUTER = "computer"
@@ -61,5 +60,6 @@ class ImageConstants {
     let DOMINO = "domino"
     let TAPE = "tape"
     
+    let KEY = "key"
 
 }

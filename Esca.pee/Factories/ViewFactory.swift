@@ -14,8 +14,8 @@ class ViewFactory {
         switch destination {
         case .tilePuzzle:
             TilePuzzleView().environmentObject(Board(dimension: 3))
-        case .secondPage:
-            GameView()
+        case .lockerPassword:
+            LockerPasswordView()
         }
     }
 }

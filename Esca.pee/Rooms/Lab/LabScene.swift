@@ -35,7 +35,7 @@ class LabScene: SKScene {
         addChild(AdapterNode(roomWidth, object: object))
         addChild(LunchboxNode(roomWidth, object: object))
         addChild(ThirdTableNode(roomWidth))
-        addChild(SecondTableNode(roomWidth, coordinator: coordinator))
+        addChild(SecondTableNode(roomWidth))
     }
     
     required init?(coder aDecoder: NSCoder) {
