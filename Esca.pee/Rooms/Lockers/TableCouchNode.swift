@@ -24,11 +24,11 @@ class TableCouchNode: SKNode, AnyNode {
         fatalError("init(coder:) has not been implemented")
     }
     func setupPosition() {
-        self.position = CGPoint(x: 0.83.vw(roomWidth), y: 0.28.vh)
+        self.position = CGPoint(x: 0.85.vw(roomWidth), y: 0.19.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.365.vw(roomWidth), height: 0.45.vh)
+        self.image!.size = CGSize(width: 0.365.vw(roomWidth), height: 0.49.vh)
     }
     
 }
