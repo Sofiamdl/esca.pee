@@ -20,8 +20,4 @@ struct Lab: View {
     func setWidth(_ imageWidth:CGFloat) {
         self.imageWidth = imageWidth
     }
-    
-    func testePrint() {
-        print("oi")
-    }
 }
