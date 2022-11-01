@@ -10,12 +10,15 @@ import SpriteKit
 class LockersNode: SKNode, AnyNode {
     private var image: SKSpriteNode?
     private var roomWidth: CGFloat!
-    
-    init(_ roomWidth: CGFloat) {
+    var coordinator: Coordinator?
+    var object: CollectableManager?
+
+    init(_ roomWidth: CGFloat, coordinator: Coordinator, object: CollectableManager) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.LOCKERS)
         self.roomWidth = roomWidth
-        
+        self.coordinator = coordinator
+        self.object = object
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
     }
@@ -29,6 +32,16 @@ class LockersNode: SKNode, AnyNode {
     
     func setupSize() {
         self.image!.size = CGSize(width: 0.5.vw(roomWidth), height: 0.52.vh)
+    }
+    
+    func setupAdditionalConfiguration() {
+        self.isUserInteractionEnabled = true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (!(object!.itemArray.contains(where: {$0.image == object!.key.image}))) {
+            self.coordinator?.lockerPassword()
+        }
     }
     
 }

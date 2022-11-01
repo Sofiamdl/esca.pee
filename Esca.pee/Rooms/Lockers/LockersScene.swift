@@ -12,13 +12,15 @@ class LockersScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
     var coordinator: Coordinator?
+    var object: CollectableManager?
+
     
-    init(with roomWidth: CGFloat, coordinator: Coordinator) {
+    init(with roomWidth: CGFloat, coordinator: Coordinator, object: CollectableManager) {
         super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
         self.scaleMode = .fill
         self.coordinator = coordinator
         self.roomWidth = roomWidth
-        addChild(LockersNode(roomWidth))
+        addChild(LockersNode(roomWidth, coordinator: coordinator, object: object))
         addChild(TableCouchNode(roomWidth))
         addChild(ChairsNode(roomWidth))
         addChild(PoufNode(roomWidth))
