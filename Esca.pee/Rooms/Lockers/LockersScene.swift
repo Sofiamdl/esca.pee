@@ -11,11 +11,18 @@ import SpriteKit
 class LockersScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+    var coordinator: Coordinator?
     
-    init(with roomWidth: CGFloat) {
+    init(with roomWidth: CGFloat, coordinator: Coordinator) {
         super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
         self.scaleMode = .fill
+        self.coordinator = coordinator
         self.roomWidth = roomWidth
+        addChild(LockersNode(roomWidth))
+        addChild(TableCouchNode(roomWidth))
+        addChild(ChairsNode(roomWidth))
+        addChild(PoufNode(roomWidth))
+        addChild(NotebookNode(roomWidth, coordinator: coordinator))
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -24,10 +31,5 @@ class LockersScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(LockersNode(roomWidth))
-//        addChild(LampsNode(roomWidth))
-        addChild(TableCouchNode(roomWidth))
-        addChild(ChairsNode(roomWidth))
-        addChild(PoufNode(roomWidth))
     }
 }

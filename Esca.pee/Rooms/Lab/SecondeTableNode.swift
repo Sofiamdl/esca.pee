@@ -33,8 +33,4 @@ class SecondTableNode: SKNode, AnyNode {
     func setupSize() {
         self.image!.size = CGSize(width: 0.29.vw(roomWidth), height: 0.4.vh)
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.coordinator?.tilePuzzle()
-    }
 }

@@ -15,9 +15,9 @@ struct GameView: View {
     var body: some View {
         ScrollBackground({
             HStack (alignment: .top,spacing: -0.5) {
-                    Kitchen()
                     Lab()
                     Couch()
+                    Kitchen()
                     Bathroom()
                     Lockers()
                 }
