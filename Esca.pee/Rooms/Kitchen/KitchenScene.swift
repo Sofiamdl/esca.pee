@@ -24,11 +24,13 @@ class KitchenScene: SKScene {
         self.roomWidth = roomWidth
         addChild(SecondeBalconyNode(roomWidth))
         addChild(BalconyNode(roomWidth))
+        addChild(MilkNode(roomWidth))
         addChild(TrashNode(roomWidth))
         addChild(CabinetNode(roomWidth))
         addChild(RefrigeratorNode(roomWidth))
         addChild(TableKitchenNode(roomWidth))
         addChild(MicrowaveNode(roomWidth))
+        addChild(LunchboxNode(roomWidth, object: object))
 
 
     }

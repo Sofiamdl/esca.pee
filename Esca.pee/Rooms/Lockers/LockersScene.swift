@@ -24,7 +24,8 @@ class LockersScene: SKScene {
         addChild(TableCouchNode(roomWidth))
         addChild(ChairsNode(roomWidth))
         addChild(PoufNode(roomWidth))
-        addChild(NotebookNode(roomWidth, coordinator: coordinator))
+        //addChild(NotebookNode(roomWidth, coordinator: coordinator))
+        addChild(CoffeeNode(roomWidth, object: object))
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

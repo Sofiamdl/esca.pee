@@ -33,7 +33,7 @@ class PaperNode: SKNode, AnyNode {
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
+        self.image!.size = CGSize(width: 0.09.vw(roomWidth), height: 0.15.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

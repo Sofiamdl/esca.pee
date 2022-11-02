@@ -26,9 +26,19 @@ class ImageConstants {
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
     let DOOR = "door"
+    let BROKEN_CABLE = "broken-cable"
+    let FIXED_CABLE = "fixed-cable"
     
     //Couch Scene
     let COUCH = "couch"
+    
+    //Cards
+    let TWO_SPADES = "two-of-spades"
+    let SIX_DIAMONDS = "six-of-diamonds"
+    let EIGHT_HEARTS = "eight-of-hearts"
+    
+    //Paper with clues
+    let PAPER_SOLUTIONS = "clue-suits-order"
     
     //Lockers Scene
     let TABLE_COUCH = "lockers-couch"
@@ -51,17 +61,24 @@ class ImageConstants {
     let TRASH = "trash-kitchen"
     let TABLE_KITCHEN = "kitchen-table"
     let CABINET = "cabinet"
+    let MILK = "milk"
 
     //Zoom-screens
     let ZOOM_TABLE = "zoom-table"
-
     let SCREWDRIVER = "screwdriver"
     let ADAPTER = "adapter"
     let LUNCHBOX = "lunchbox"
-    // na vdd a lancheira só vai ter um on tap gesture que "abre" ela e libera o papel, que será o coletável
+    let LUNCHBOX_OPEN = "lunch-box-opened"
     let DOMINO = "domino"
     let TAPE = "tape"
     
+    //Mugs
+    let MUG_BLEND = "mug-blend"
+    let MUG_CARD = "mug-card"
+    let MUG_COFFEE = "mug-coffee"
+    let MUG_POWDER = "mug-powder"
+    
+    //Key
     let KEY = "key"
 
 }

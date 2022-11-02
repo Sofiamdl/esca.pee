@@ -11,11 +11,16 @@ import SpriteKit
 class CouchScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+    var coordinator: Coordinator?
     
-    init(with roomWidth: CGFloat) {
+    init(with roomWidth: CGFloat, coordinator: Coordinator) {
         super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
         self.scaleMode = .fill
+        self.coordinator = coordinator
         self.roomWidth = roomWidth
+        //addChild(ChairsNode(roomWidth))
+        addChild(PoufNode(roomWidth))
+        addChild(NotebookNode(roomWidth, coordinator: coordinator))
     }
     
     required init?(coder aDecoder: NSCoder) {

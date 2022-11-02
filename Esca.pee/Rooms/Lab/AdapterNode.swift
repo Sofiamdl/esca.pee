@@ -29,11 +29,11 @@ class AdapterNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.35.vw(roomWidth), y: 0.528.vh)
+        self.position = CGPoint(x: 0.7.vw(roomWidth), y: 0.7.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
+        self.image!.size = CGSize(width: 0.05.vw(roomWidth), height: 0.1.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
