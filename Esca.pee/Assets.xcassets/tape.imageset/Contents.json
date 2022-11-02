@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "lovepik-scotch-tape-png-image_400447251_wh1200.png",
+      "filename" : "tape.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "tape@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "tape@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

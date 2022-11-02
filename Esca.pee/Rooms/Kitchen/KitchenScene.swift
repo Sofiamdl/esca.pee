@@ -25,9 +25,9 @@ class KitchenScene: SKScene {
         addChild(SecondeBalconyNode(roomWidth))
         addChild(BalconyNode(roomWidth))
         addChild(TrashNode(roomWidth))
-        addChild(TableKitchenNode(roomWidth))
         addChild(CabinetNode(roomWidth))
         addChild(RefrigeratorNode(roomWidth))
+        addChild(TableKitchenNode(roomWidth))
         addChild(MicrowaveNode(roomWidth))
 
 

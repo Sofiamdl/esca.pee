@@ -26,7 +26,7 @@ class CabinetNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.626.vw(roomWidth), y: 0.816.vh)
+        self.position = CGPoint(x: 0.602.vw(roomWidth), y: 0.76.vh)
     }
     
     func setupSize() {

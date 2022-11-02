@@ -26,10 +26,10 @@ class BalconyNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.574.vw(roomWidth), y: 0.471.vh)
+        self.position = CGPoint(x: 0.55.vw(roomWidth), y: 0.398.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.28.vw(roomWidth), height: 0.32.vh)
+        self.image!.size = CGSize(width: 0.28.vw(roomWidth), height: 0.40.vh)
     }
 }

@@ -14,9 +14,11 @@ class ImageConstants {
     let BACKGROUND_LAB = "background-lab"
     let BACKGROUND_COUCH = "background-couch"
     let BACKGROUND_LOCKERS = "background-lockers"
+    let BACKGROUND_LOCKERS2 = "background-lockers2"
     let BACKGROUND_KITCHEN = "background-kitchen"
     let BACKGROUND_BATHROOM = "background-bathroom"
     let BACKGROUND_LOCKER_SCREEN = "background-locker"
+    
     //Lab Scene
     let TABLE = "table"
     let COMPUTER = "computer"
@@ -47,13 +49,13 @@ class ImageConstants {
     let REFRIGERATOR = "refrigerator-kitchen"
     let MICROWAVE = "microwave-kitchen"
     let TRASH = "trash-kitchen"
-    let TABLE_KITCHEN = "table-kitchen"
+    let TABLE_KITCHEN = "kitchen-table"
     let CABINET = "cabinet"
 
     //Zoom-screens
     let ZOOM_TABLE = "zoom-table"
 
-    let SCREWDRIVER = "chave-de-fenda"
+    let SCREWDRIVER = "screwdriver"
     let ADAPTER = "adapter"
     let LUNCHBOX = "lunchbox"
     // na vdd a lancheira só vai ter um on tap gesture que "abre" ela e libera o papel, que será o coletável

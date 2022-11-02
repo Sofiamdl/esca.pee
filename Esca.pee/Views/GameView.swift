@@ -18,8 +18,8 @@ struct GameView: View {
                     Lab()
                     Couch()
                     Kitchen()
-                    Bathroom()
                     Lockers()
+                    Bathroom()
                 }
             .ignoresSafeArea()
             .frame(maxWidth:.infinity, maxHeight: .infinity)

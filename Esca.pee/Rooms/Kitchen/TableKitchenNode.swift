@@ -26,10 +26,10 @@ class TableKitchenNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.8.vw(roomWidth), y: 0.17.vh)
+        self.position = CGPoint(x: 0.87.vw(roomWidth), y: 0.24.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.135.vw(roomWidth), height: 0.25.vh)
+        self.image!.size = CGSize(width: 0.24.vw(roomWidth), height: 0.33.vh)
     }
 }

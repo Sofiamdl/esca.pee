@@ -26,7 +26,7 @@ class MicrowaveNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.55.vw(roomWidth), y: 0.689.vh)
+        self.position = CGPoint(x: 0.525.vw(roomWidth), y: 0.635.vh)
     }
     
     func setupSize() {

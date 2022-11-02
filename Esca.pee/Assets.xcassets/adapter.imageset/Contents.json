@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "mac-adapter-usb-adapter-a115.png",
+      "filename" : "adapter.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "adapter@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "adapter@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

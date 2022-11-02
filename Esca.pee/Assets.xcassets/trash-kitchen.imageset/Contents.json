@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Group 7.png",
+      "filename" : "trash-kitchen.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 7@2x.png",
+      "filename" : "trash-kitchen@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 7@3x.png",
+      "filename" : "trash-kitchen@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
