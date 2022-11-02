@@ -44,6 +44,7 @@ class CollectableManager: ObservableObject {
     
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
+    var itemArrayName: [String] = []
 
 
     @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
@@ -65,8 +66,12 @@ class CollectableManager: ObservableObject {
         defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
     }
     
+//    func getId(item: Collectable) -> Int {
+//        return item.id
+//    }
+    
     func changeClicked(_ index: Int) {
-        print(String(describing:itemArray))
+        //print(String(describing:itemArray))
         var isClicked = false
         
         for (i, _) in itemArray.enumerated() {

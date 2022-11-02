@@ -22,8 +22,6 @@ class ToolModel: ObservableObject {
     static let shared = ToolModel()
     private init () {}
     
-    @Published var item1 = Tool(id: 1, image: "chave-de-fenda.png", isTaken: false, isSelected: false)
-    
     //empty array
     @Published var itemArray: [Tool] = []
 }
