@@ -15,6 +15,7 @@ class CouchScene: SKScene {
     var coordinator: Coordinator?
 
     init(with roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator) {
+        super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
         self.object = object
         self.coordinator = coordinator
         self.roomWidth = roomWidth
