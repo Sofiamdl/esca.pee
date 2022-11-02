@@ -15,7 +15,6 @@ class KitchenScene: SKScene {
     var object: CollectableManager?
     var coordinator: Coordinator?
 
-    
     init(with roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator ) {
         super.init(size: CGSize(width: roomWidth, height: UIScreen.main.bounds.height))
         self.scaleMode = .fill
@@ -24,7 +23,7 @@ class KitchenScene: SKScene {
         self.roomWidth = roomWidth
         addChild(SecondeBalconyNode(roomWidth))
         addChild(BalconyNode(roomWidth))
-        addChild(MilkNode(roomWidth))
+        addChild(MilkNode(roomWidth, object: object))
         addChild(TrashNode(roomWidth))
         addChild(CabinetNode(roomWidth))
         addChild(RefrigeratorNode(roomWidth))

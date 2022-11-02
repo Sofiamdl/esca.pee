@@ -13,13 +13,14 @@ class BrokenCableNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
     var object: CollectableManager?
+    var didUserTap = false
 
-    init(_ roomWidth: CGFloat/*, object: CollectableManager*/) {
+    init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.BROKEN_CABLE)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
-        //self.object = object
+        self.object = object
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
     }
@@ -36,12 +37,20 @@ class BrokenCableNode: SKNode, AnyNode {
         self.image!.size = CGSize(width: 0.08.vw(roomWidth), height: 0.12.vh)
     }
     
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.removeFromParent()
-//        object!.addToArray(item: object!.tape)
-//        // mandar esse objeto pro itemDock -- como?
-//        // implementar isso em todos os coletáveis
-//
-//    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if !didUserTap {
+            self.image?.removeFromParent()
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.FIXED_CABLE)
+            setupNode()
+            addChild(self.image ?? SKSpriteNode())
+            didUserTap.toggle()
+        } else {
+            self.removeFromParent()
+            object!.addToArray(item: object!.fixed_cable)
+        }
+        
+        //click no papel dá pra outra tela
+        
+    }
 }
 
