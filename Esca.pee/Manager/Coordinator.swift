@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Destination: String {
     case tilePuzzle
-    case secondPage
+    case lockerPassword
 }
 
 class Coordinator: ObservableObject {
@@ -24,9 +24,7 @@ class Coordinator: ObservableObject {
         path.append(Destination.tilePuzzle)
     }
 
-    func tapOnSecondPage() {
-        path.removeLast()
-        path.append(Destination.secondPage)
-
+    func lockerPassword() {
+        path.append(Destination.lockerPassword)
     }
 }

@@ -39,8 +39,9 @@ class CollectableManager: ObservableObject {
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
     @Published var itemsUsed: [String] = []
-    
-    
+    var itemArrayName: [String] = []
+
+
     @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
     @Published var screwdriver: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.SCREWDRIVER)
     @Published var adapter: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.ADAPTER)
@@ -49,7 +50,11 @@ class CollectableManager: ObservableObject {
     @Published var computer: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.COMPUTER)
     @Published var domino: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.DOMINO)
     @Published var tape: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.TAPE)
-    
+    @Published var key: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.KEY)
+    @Published var mug_coffee: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_COFFEE)
+    @Published var fixed_cable: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.FIXED_CABLE)
+//    @Published var coffee: Coffee = .empty
+
     
     func addToArray(item: Collectable) {
         itemArray.append(item)
@@ -72,8 +77,14 @@ class CollectableManager: ObservableObject {
         }
     }
     
-    func changeClicked(_ index: Int) {
+// func changeClicked(_ index: Int) {
 //        print(String(describing:itemArray))
+//    func getId(item: Collectable) -> Int {
+//        return item.id
+//    }
+    
+    func changeClicked(_ index: Int) {
+        //print(String(describing:itemArray))
         var isClicked = false
         
         for (i, _) in itemArray.enumerated() {

@@ -26,7 +26,7 @@ class SecondeBalconyNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.19.vw(roomWidth), y: 0.16.vh)
+        self.position = CGPoint(x: 0.17.vw(roomWidth), y: 0.24.vh)
     }
     
     func setupSize() {

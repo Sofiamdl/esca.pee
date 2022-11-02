@@ -10,14 +10,12 @@ import SpriteKit
 class SecondTableNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
-    var coordinator: Coordinator?
 
-    init(_ roomWidth: CGFloat, coordinator: Coordinator) {
+    init(_ roomWidth: CGFloat) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.SECONDE_TABLE)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
-        self.coordinator = coordinator
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
     }

@@ -26,10 +26,10 @@ class RefrigeratorNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.755.vw(roomWidth), y: 0.523.vh)
+        self.position = CGPoint(x: 0.73.vw(roomWidth), y: 0.436.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.10.vw(roomWidth), height: 0.42.vh)
+        self.image!.size = CGSize(width: 0.10.vw(roomWidth), height: 0.48.vh)
     }
 }

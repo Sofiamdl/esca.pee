@@ -29,13 +29,14 @@ class LabScene: SKScene {
         if (!(object.itemArray.contains(where: {$0.image == object.milk.image}))) {
             addChild(CoffeeNode(roomWidth, object: object))
         }
-        addChild(DominoNode(roomWidth, object: object))
-        addChild(ScrewdriverNode(roomWidth, object: object))
+        //addChild(DominoNode(roomWidth, object: object))
+        //addChild(ScrewdriverNode(roomWidth, object: object))
         addChild(TapeNode(roomWidth, object: object))
-        addChild(AdapterNode(roomWidth, object: object))
-        addChild(LunchboxNode(roomWidth, object: object))
+        //addChild(LunchboxNode(roomWidth, object: object))
         addChild(ThirdTableNode(roomWidth))
-        addChild(SecondTableNode(roomWidth, coordinator: coordinator))
+        //addChild(AdapterNode(roomWidth, object: object))
+        addChild(SecondTableNode(roomWidth))
+        addChild(BrokenCableNode(roomWidth, object: object))
     }
     
     required init?(coder aDecoder: NSCoder) {

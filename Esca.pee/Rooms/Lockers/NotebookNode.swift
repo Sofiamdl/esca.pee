@@ -26,7 +26,7 @@ class NotebookNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.182.vw(roomWidth), y: 0.36.vh)
+        self.position = CGPoint(x: 0.225.vw(roomWidth), y: 0.442.vh)
     }
     
     func setupSize() {

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "iPhone 14 Pro - 7.png",
+      "filename" : "background-kitchen.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "iPhone 14 Pro - 7@2x.png",
+      "filename" : "background-kitchen@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "iPhone 14 Pro - 7@3x.png",
+      "filename" : "background-kitchen@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

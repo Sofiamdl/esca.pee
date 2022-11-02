@@ -10,9 +10,10 @@ import SwiftUI
 struct Couch: View {
     @State private var imageWidth: CGFloat = 0;
     @EnvironmentObject private var object: CollectableManager
+    @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
-        RoomComponent(imagePath: ImageConstants.shared.BACKGROUND_COUCH, scene: CouchScene(with: imageWidth, object: object), setImageWidth: setWidth)
+        RoomComponent(imagePath: ImageConstants.shared.BACKGROUND_COUCH, scene: CouchScene(with: imageWidth, object: object, coordinator: coordinator), setImageWidth: setWidth)
     }
     
     func setWidth (_ imageWidth: CGFloat) {

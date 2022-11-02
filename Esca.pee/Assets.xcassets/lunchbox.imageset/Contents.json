@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "lunch-box-picture-5a3bc784007cb2.790400171513867140002.jpg",
+      "filename" : "lunchbox.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "lunchbox@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "lunchbox@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

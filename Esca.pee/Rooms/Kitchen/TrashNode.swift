@@ -26,10 +26,10 @@ class TrashNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.93.vw(roomWidth), y: 0.32.vh)
+        self.position = CGPoint(x: 0.822.vw(roomWidth), y: 0.27.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.06.vw(roomWidth), height: 0.13.vh)
+        self.image!.size = CGSize(width: 0.05.vw(roomWidth), height: 0.11.vh)
     }
 }

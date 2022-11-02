@@ -16,7 +16,7 @@ class CoffeeNode: SKNode, AnyNode {
 
     init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COFFEEMUG)
+        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MUG_COFFEE)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
         self.object = object
@@ -29,18 +29,18 @@ class CoffeeNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.25.vw(roomWidth), y: 0.528.vh)
+        self.position = CGPoint(x: 0.52.vw(roomWidth), y: 0.28.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
+        self.image!.size = CGSize(width: 0.05.vw(roomWidth), height: 0.10.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.removeFromParent()
-        object!.addToArray(item: object!.milk)
-        // mandar esse objeto pro itemDock -- como?
-        // implementar isso em todos os coletáveis
+        object!.addToArray(item: object!.mug_coffee)
+        //com leite selecionado, vira mug-blend
+        //clica de novo, vira mug-card
         
     }
 }

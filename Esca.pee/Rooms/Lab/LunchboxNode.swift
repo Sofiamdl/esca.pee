@@ -30,11 +30,11 @@ class LunchboxNode: SKNode, AnyNode {
     }
 
     func setupPosition() {
-        self.position = CGPoint(x: 0.50.vw(roomWidth), y: 0.528.vh)
+        self.position = CGPoint(x: 0.87.vw(roomWidth), y: 0.43.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.105.vw(roomWidth), height: 0.2.vh)
+        self.image!.size = CGSize(width: 0.08.vw(roomWidth), height: 0.15.vh)
     }
     
     
