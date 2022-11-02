@@ -30,8 +30,6 @@ class KitchenScene: SKScene {
         addChild(TableKitchenNode(roomWidth))
         addChild(MicrowaveNode(roomWidth))
         addChild(LunchboxNode(roomWidth, object: object))
-
-
     }
     
     required init?(coder aDecoder: NSCoder) {
