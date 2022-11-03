@@ -11,7 +11,11 @@ import SwiftUI
 struct LetterView: View {
     
     var body: some View {
-        Image(ImageConstants.shared.TWO_SPADES)
+        Image(ImageConstants.shared.OPEN_PAPER)
+            .resizable()
+            .scaledToFit()
+            .frame(minHeight: UIScreen.main.bounds.height - 30)
+            .frame(maxWidth:.infinity, maxHeight: .infinity)
             
         
     }
