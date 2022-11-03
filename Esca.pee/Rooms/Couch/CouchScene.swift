@@ -19,9 +19,9 @@ class CouchScene: SKScene {
         self.object = object
         self.coordinator = coordinator
         self.roomWidth = roomWidth
-        //addChild(ChairsNode(roomWidth))
+        addChild(CouchNode(roomWidth))
         addChild(PoufNode(roomWidth))
-        addChild(NotebookNode(roomWidth, coordinator: coordinator))
+        addChild(NotebookNode(roomWidth,object: object, coordinator: coordinator))
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -32,7 +32,7 @@ class CouchScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(CouchNode(roomWidth, object: object!))
+        
     }
     
 }

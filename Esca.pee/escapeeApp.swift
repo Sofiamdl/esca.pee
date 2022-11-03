@@ -22,7 +22,19 @@ struct escapeeApp: App {
                 NavigationStack(path: $coordinator.path) {
                     GameView()
                     .navigationDestination(for: Destination.self) { destination in
-                        ViewFactory.viewForDestination(destination)
+                        switch destination {
+                        case .tilePuzzle:
+                            TilePuzzleView().environmentObject(Board(dimension: 4, object: collectableManager, coordinator: coordinator))
+                        case .lockerPassword:
+                            LockerPasswordView()
+                        case .computer:
+                            ComputerView().background(Color.ui.computerGreen)
+                        case .letterZoom:
+                            LetterView()
+                        case .notebookZoom:
+                            NotebookView()
+                        }
+                        
                         
                     }
                 }

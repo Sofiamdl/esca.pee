@@ -24,6 +24,7 @@
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
 		0D472C5C29134826009820C0 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472C5B29134826009820C0 /* LetterView.swift */; };
+		0D472C5E291378D4009820C0 /* NotebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D472C5D291378D4009820C0 /* NotebookView.swift */; };
 		BF1CEBDB29082EDD00F0D8B6 /* TableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */; };
 		BF1CEBDF290830A300F0D8B6 /* AnyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBDE290830A300F0D8B6 /* AnyNode.swift */; };
 		BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1CEBE3290834B000F0D8B6 /* ComputerNode.swift */; };
@@ -88,6 +89,7 @@
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
 		0D472C5B29134826009820C0 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
+		0D472C5D291378D4009820C0 /* NotebookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookView.swift; sourceTree = "<group>"; };
 		BF1CEBDA29082EDD00F0D8B6 /* TableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNode.swift; sourceTree = "<group>"; };
 		BF1CEBDE290830A300F0D8B6 /* AnyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyNode.swift; sourceTree = "<group>"; };
 		BF1CEBE3290834B000F0D8B6 /* ComputerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerNode.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */,
 				BFB2A221291351AD0074EF8F /* ComputerView.swift */,
 				0D472C5B29134826009820C0 /* LetterView.swift */,
+				0D472C5D291378D4009820C0 /* NotebookView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				BF20CB3E29074FA1003B3AA8 /* RoomComponent.swift in Sources */,
 				BFB2A2202911C3600074EF8F /* Color.swift in Sources */,
 				C09E0D9C2911A02A0090495B /* BathroomScene.swift in Sources */,
+				0D472C5E291378D4009820C0 /* NotebookView.swift in Sources */,
 				0D04AB26290C378700176A62 /* ChairsNode.swift in Sources */,
 				C01FAE5829131F1100A490CB /* BrokenCableNode.swift in Sources */,
 				BF82935E2901C1FA00CFC0F8 /* ScrollBackground.swift in Sources */,
