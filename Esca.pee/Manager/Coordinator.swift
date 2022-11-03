@@ -10,14 +10,20 @@ import SwiftUI
 enum Destination: String {
     case tilePuzzle
     case lockerPassword
+    case gameView
     case computer
     case letterZoom
+    case cardMugView
 }
 
 class Coordinator: ObservableObject {
 
     @Published var path: [Destination] = []
 
+    func gotoBackOnepage() {
+        path.removeLast(1)
+    }
+    
     func gotoHomePage() {
         path.removeLast(path.count)
     }
@@ -34,7 +40,16 @@ class Coordinator: ObservableObject {
         path.append(Destination.lockerPassword)
     }
     
-    func letterZoom () {
+    func goToGameView() {
+        path.append(Destination.gameView)
+    }
+    
+    func LetterZoom () {
         path.append(Destination.letterZoom)
     }
+    
+    func cardMugView() {
+        path.append(Destination.cardMugView)
+    }
+
 }

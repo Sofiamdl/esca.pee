@@ -11,11 +11,18 @@ import SpriteKit
 class BathroomScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+        
     
-    init(with roomWidth: CGFloat) {
+    
+    var object: CollectableManager?
+    var coordinator: Coordinator?
+
+    init(with roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator) {
         super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
         self.scaleMode = .fill
         self.roomWidth = roomWidth
+        self.object = object
+        self.coordinator = coordinator
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,7 +33,7 @@ class BathroomScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(BathroomNode(roomWidth))
+        addChild(BathroomNode(roomWidth, object: object!, coordinator: coordinator!))
     }
     
 }

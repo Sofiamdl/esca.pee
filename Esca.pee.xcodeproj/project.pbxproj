@@ -53,12 +53,14 @@
 		BFB2A21E2911B52E0074EF8F /* LockerPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */; };
 		BFB2A2202911C3600074EF8F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21F2911C3600074EF8F /* Color.swift */; };
 		BFB2A222291351AD0074EF8F /* ComputerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A221291351AD0074EF8F /* ComputerView.swift */; };
+		BFB2A224291370500074EF8F /* CardMugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A223291370500074EF8F /* CardMugView.swift */; };
 		BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* escapeeApp.swift */; };
 		BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7728FF221C00652C50 /* GameView.swift */; };
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
 		BFEDAA7D28FF221F00652C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */; };
 		C01FAE56291313B900A490CB /* MilkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE55291313B900A490CB /* MilkNode.swift */; };
 		C01FAE5829131F1100A490CB /* BrokenCableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE5729131F1100A490CB /* BrokenCableNode.swift */; };
+		C01FAE5A2913349200A490CB /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE592913349200A490CB /* HomeScreenView.swift */; };
 		C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D89290AF9D30090495B /* CoffeeNode.swift */; };
 		C09E0D8E291039660090495B /* AdapterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8D291039660090495B /* AdapterNode.swift */; };
 		C09E0D902910397F0090495B /* LunchboxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8F2910397F0090495B /* LunchboxNode.swift */; };
@@ -118,6 +120,7 @@
 		BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerPasswordView.swift; sourceTree = "<group>"; };
 		BFB2A21F2911C3600074EF8F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		BFB2A221291351AD0074EF8F /* ComputerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerView.swift; sourceTree = "<group>"; };
+		BFB2A223291370500074EF8F /* CardMugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMugView.swift; sourceTree = "<group>"; };
 		BFEDAA7228FF221C00652C50 /* Esca.pee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esca.pee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDAA7528FF221C00652C50 /* escapeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escapeeApp.swift; sourceTree = "<group>"; };
 		BFEDAA7728FF221C00652C50 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 		BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C01FAE55291313B900A490CB /* MilkNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkNode.swift; sourceTree = "<group>"; };
 		C01FAE5729131F1100A490CB /* BrokenCableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenCableNode.swift; sourceTree = "<group>"; };
+		C01FAE592913349200A490CB /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		C09E0D89290AF9D30090495B /* CoffeeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeNode.swift; sourceTree = "<group>"; };
 		C09E0D8D291039660090495B /* AdapterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterNode.swift; sourceTree = "<group>"; };
 		C09E0D8F2910397F0090495B /* LunchboxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchboxNode.swift; sourceTree = "<group>"; };
@@ -243,9 +247,11 @@
 				0D04AB32291041EA00176A62 /* TilePuzzleView.swift */,
 				BFEDAA7728FF221C00652C50 /* GameView.swift */,
 				BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */,
+				C01FAE592913349200A490CB /* HomeScreenView.swift */,
 				BFB2A221291351AD0074EF8F /* ComputerView.swift */,
 				0D472C5B29134826009820C0 /* LetterView.swift */,
 				0D472C5D291378D4009820C0 /* NotebookView.swift */,
+				BFB2A223291370500074EF8F /* CardMugView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +457,7 @@
 				0D472C5C29134826009820C0 /* LetterView.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
 				0D04AB3E2911A8C400176A62 /* NotebookNode.swift in Sources */,
+				C01FAE5A2913349200A490CB /* HomeScreenView.swift in Sources */,
 				C01FAE56291313B900A490CB /* MilkNode.swift in Sources */,
 				BFB2A2102911997E0074EF8F /* SecondeBalconyNode.swift in Sources */,
 				BFB2A21229119C0F0074EF8F /* BalconyNode.swift in Sources */,
@@ -481,6 +488,7 @@
 				0D04AB28290C494C00176A62 /* PoufNode.swift in Sources */,
 				0D04AB33291041EA00176A62 /* TilePuzzleView.swift in Sources */,
 				C09E0D94291045EE0090495B /* PaperNode.swift in Sources */,
+				BFB2A224291370500074EF8F /* CardMugView.swift in Sources */,
 				BF1CEBE4290834B000F0D8B6 /* ComputerNode.swift in Sources */,
 				BFB2A20E291197F80074EF8F /* KitchenScene.swift in Sources */,
 			);

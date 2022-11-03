@@ -23,12 +23,14 @@ class KitchenScene: SKScene {
         self.roomWidth = roomWidth
         addChild(SecondeBalconyNode(roomWidth))
         addChild(BalconyNode(roomWidth))
-        addChild(MilkNode(roomWidth, object: object))
+        if (!(object.itemArray.contains(where: {$0.image == object.milk.image}))){
+            addChild(MilkNode(roomWidth, object: object))
+        }
         addChild(TrashNode(roomWidth))
         addChild(CabinetNode(roomWidth))
         addChild(RefrigeratorNode(roomWidth))
         addChild(TableKitchenNode(roomWidth))
-        addChild(MicrowaveNode(roomWidth))
+        addChild(MicrowaveNode(roomWidth, object: object))
         addChild(LunchboxNode(roomWidth, object: object, coordinator: coordinator))
     }
     

@@ -11,6 +11,8 @@ import SwiftUI
 struct ItemDock: View {
     
     @EnvironmentObject private var object: CollectableManager
+    @EnvironmentObject private var coordinator: Coordinator
+    
     @State var index = 0
     
     var body: some View {
@@ -26,9 +28,13 @@ struct ItemDock: View {
                             .border(object.itemArray[index].isClicked ? .red : .clear, width: object.itemArray[index].isClicked ? 4 : 0)
                         
                             .onTapGesture {
-                                object.changeClicked(index)
-                                //print(object.itemArray[index].image)
-                                //Text(object.itemArray[index].isClicked ? object.itemArray[index].image : "")
+                                if (object.itemArray[index].image == object.mug_card.image) {
+                                    coordinator.cardMugView()
+                                } else {
+                                    object.changeClicked(index)
+                                    //print(object.itemArray[index].image)
+                                    //Text(object.itemArray[index].isClicked ? object.itemArray[index].image : "")
+                                }
                             }
                         if object.itemArray[index].isClicked {
                             Text(object.itemArray[index].image)

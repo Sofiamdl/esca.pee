@@ -35,7 +35,6 @@ class CollectableManager: ObservableObject {
     }
     
     
-    
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
     @Published var itemsUsed: [String] = []
@@ -51,15 +50,25 @@ class CollectableManager: ObservableObject {
     @Published var domino: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.DOMINO)
     @Published var tape: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.TAPE)
     @Published var key: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.KEY)
-    @Published var mug_coffee: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_COFFEE)
+    @Published var mug_coffee: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_BLEND)
     @Published var fixed_cable: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.FIXED_CABLE)
-//    @Published var notebook: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.NOTEBOOK)
+    @Published var mug_card: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_CARD)
 
     func addToArray(item: Collectable) {
         itemArray.append(item)
         itemArrayAux.append(item.image)
         let defaults = UserDefaults.standard
         defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
+    }
+    
+    func cleanGame() {
+        let defaults = UserDefaults.standard
+        itemArray = []
+        itemsUsed = []
+        itemArrayAux = []
+        defaults.set([], forKey: DefaultsKeys.keyOne)
+        defaults.set([], forKey: DefaultsKeys.keyTwo)
+
     }
     
     func useItem(item: Collectable) {

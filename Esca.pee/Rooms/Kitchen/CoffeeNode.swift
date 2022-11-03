@@ -13,11 +13,17 @@ class CoffeeNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
     var object: CollectableManager?
+    var didUserTap = false
 
     init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MUG_COFFEE)
+        if object.itemsUsed.contains(where: {$0 == object.milk.image}) {
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MUG_BLEND)
+        } else {
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MUG_POWDER)
+        }
         self.isUserInteractionEnabled = true
+        
         self.roomWidth = roomWidth
         self.object = object
         setupNode()
@@ -33,12 +39,26 @@ class CoffeeNode: SKNode, AnyNode {
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.05.vw(roomWidth), height: 0.10.vh)
+        self.image!.size = CGSize(width: 0.025.vw(roomWidth), height: 0.08.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.removeFromParent()
-        object!.addToArray(item: object!.mug_coffee)
+        if !didUserTap {
+            let i = object!.findIndex(item: object!.milk)
+            if (i != -1) {
+                if (object!.itemArray[i].isClicked) {
+                    self.image?.removeFromParent()
+                    self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MUG_BLEND)
+                    setupNode()
+                    addChild(self.image ?? SKSpriteNode())
+                    object!.useItem(item: object!.milk)
+                    didUserTap.toggle()
+                }
+            }
+        } else {
+            self.removeFromParent()
+            object!.addToArray(item: object!.mug_coffee)
+        }
         //com leite selecionado, vira mug-blend
         //clica de novo, vira mug-card
         

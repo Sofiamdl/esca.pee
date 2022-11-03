@@ -20,7 +20,7 @@ struct escapeeApp: App {
         WindowGroup {
             if #available(iOS 16.0, *) {
                 NavigationStack(path: $coordinator.path) {
-                    GameView()
+                    HomeScreenView()
                     .navigationDestination(for: Destination.self) { destination in
                         switch destination {
                         case .tilePuzzle:
@@ -31,13 +31,15 @@ struct escapeeApp: App {
                             ComputerView().background(Color.ui.computerGreen)
                         case .letterZoom:
                             LetterView()
+                        case .cardMugView:
+                            CardMugView()
                         }
                     }
                 }
                 .environmentObject(coordinator)
                 .environmentObject(collectableManager)
             } else {
-                GameView()
+                HomeScreenView()
             }
         }
     }

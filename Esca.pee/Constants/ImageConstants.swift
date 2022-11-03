@@ -77,8 +77,10 @@ class ImageConstants {
     let MUG_CARD = "mug-card"
     let MUG_COFFEE = "mug-coffee"
     let MUG_POWDER = "mug-powder"
-    
+    let MICROWAVE_MUG = "microwave-mug"
+
     //Key
     let KEY = "bathroom-key"
+    let OPEN_PAPER = "open-paper"
 
 }
