@@ -10,6 +10,7 @@ import SwiftUI
 enum Destination: String {
     case tilePuzzle
     case lockerPassword
+    case computer
 }
 
 class Coordinator: ObservableObject {
@@ -22,6 +23,10 @@ class Coordinator: ObservableObject {
 
     func tilePuzzle() {
         path.append(Destination.tilePuzzle)
+    }
+    
+    func computer() {
+        path.append(Destination.computer)
     }
 
     func lockerPassword() {

@@ -14,6 +14,7 @@ extension Color {
          let green = Color("green")
         let grey = Color("grey")
         let darGrey = Color("dark-grey")
+        let computerGreen = Color("computer-green")
 
     }
 }

@@ -17,7 +17,11 @@ class BrokenCableNode: SKNode, AnyNode {
 
     init(_ roomWidth: CGFloat, object: CollectableManager) {
         super.init()
-        self.image = SKSpriteNode(imageNamed: ImageConstants.shared.BROKEN_CABLE)
+        if object.itemsUsed.contains(where: {$0 == object.tape.image}) {
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.FIXED_CABLE)
+        } else {
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.BROKEN_CABLE)
+        }
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
         self.object = object
@@ -39,18 +43,24 @@ class BrokenCableNode: SKNode, AnyNode {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !didUserTap {
-            self.image?.removeFromParent()
-            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.FIXED_CABLE)
-            setupNode()
-            addChild(self.image ?? SKSpriteNode())
-            didUserTap.toggle()
+
+            let i = object!.findIndex(item: object!.tape)
+            if (i != -1) {
+                
+                if (object!.itemArray[i].isClicked) {
+                    self.image?.removeFromParent()
+                    self.image = SKSpriteNode(imageNamed: ImageConstants.shared.FIXED_CABLE)
+                    setupNode()
+                    addChild(self.image ?? SKSpriteNode())
+                    object!.removeFromArray(item: object!.tape)
+                    didUserTap.toggle()
+                }
+            }
         } else {
             self.removeFromParent()
             object!.addToArray(item: object!.fixed_cable)
         }
-        
         //click no papel dá pra outra tela
-        
     }
 }
 

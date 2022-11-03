@@ -23,20 +23,20 @@ class LabScene: SKScene {
         self.roomWidth = roomWidth
         addChild(BookshelfNode(roomWidth))
         addChild(TableNode(roomWidth))
-        if (!(object.itemArray.contains(where: {$0.image == object.adapter.image}))) {
-            addChild(ComputerNode(roomWidth, object: object))
+        addChild(ComputerNode(roomWidth, object: object, coordinator: coordinator))
+        let tapeInDock = !(object.itemArray.contains(where: {$0.image == object.tape.image}))
+        let tapeIsUsed = !(object.itemsUsed.contains(where: {$0 == object.tape.image}))
+
+        if (tapeInDock && tapeIsUsed) {
+            addChild(TapeNode(roomWidth, object: object))
         }
-        if (!(object.itemArray.contains(where: {$0.image == object.milk.image}))) {
-            addChild(CoffeeNode(roomWidth, object: object))
-        }
-        //addChild(DominoNode(roomWidth, object: object))
-        //addChild(ScrewdriverNode(roomWidth, object: object))
-        addChild(TapeNode(roomWidth, object: object))
-        //addChild(LunchboxNode(roomWidth, object: object))
         addChild(ThirdTableNode(roomWidth))
-        //addChild(AdapterNode(roomWidth, object: object))
         addChild(SecondTableNode(roomWidth))
-        addChild(BrokenCableNode(roomWidth, object: object))
+        let cableInDock = !(object.itemArray.contains(where: {$0.image == object.fixed_cable.image}))
+        let cableIsUsed = !(object.itemsUsed.contains(where: {$0 == object.fixed_cable.image}))
+        if (cableInDock && cableIsUsed) {
+            addChild(BrokenCableNode(roomWidth, object: object))
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -50,16 +50,7 @@ class LabScene: SKScene {
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
     }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let touch = touches.first else { return }
-        let location = touch.location(in: self)
-        let box = SKSpriteNode(color: .red, size: CGSize(width: 50, height: 50))
-        box.position = location
-        box.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
-        addChild(box)
-    }
-
+    
     func scrollBackground(){
         self.enumerateChildNodes(withName: "table", using: ({
             (node, error) in

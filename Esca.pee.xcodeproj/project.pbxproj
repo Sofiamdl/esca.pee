@@ -50,6 +50,7 @@
 		BFB2A21C29119F340074EF8F /* CabinetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21B29119F340074EF8F /* CabinetNode.swift */; };
 		BFB2A21E2911B52E0074EF8F /* LockerPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */; };
 		BFB2A2202911C3600074EF8F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A21F2911C3600074EF8F /* Color.swift */; };
+		BFB2A222291351AD0074EF8F /* ComputerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB2A221291351AD0074EF8F /* ComputerView.swift */; };
 		BFEDAA7628FF221C00652C50 /* escapeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7528FF221C00652C50 /* escapeeApp.swift */; };
 		BFEDAA7828FF221C00652C50 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEDAA7728FF221C00652C50 /* GameView.swift */; };
 		BFEDAA7A28FF221F00652C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7928FF221F00652C50 /* Assets.xcassets */; };
@@ -114,6 +115,7 @@
 		BFB2A21B29119F340074EF8F /* CabinetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetNode.swift; sourceTree = "<group>"; };
 		BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockerPasswordView.swift; sourceTree = "<group>"; };
 		BFB2A21F2911C3600074EF8F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BFB2A221291351AD0074EF8F /* ComputerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerView.swift; sourceTree = "<group>"; };
 		BFEDAA7228FF221C00652C50 /* Esca.pee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esca.pee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEDAA7528FF221C00652C50 /* escapeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = escapeeApp.swift; sourceTree = "<group>"; };
 		BFEDAA7728FF221C00652C50 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				BFEDAA7728FF221C00652C50 /* GameView.swift */,
 				BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */,
+				BFB2A221291351AD0074EF8F /* ComputerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				0D04AB22290C141900176A62 /* LockersScene.swift in Sources */,
 				C09E0D96291048770090495B /* TapeNode.swift in Sources */,
 				C09E0D8E291039660090495B /* AdapterNode.swift in Sources */,
+				BFB2A222291351AD0074EF8F /* ComputerView.swift in Sources */,
 				BFB2A20A291051540074EF8F /* ViewFactory.swift in Sources */,
 				BF1CEBEB2908525000F0D8B6 /* CollectableManager.swift in Sources */,
 				BF82936D29030B0E00CFC0F8 /* ClickableImage.swift in Sources */,
