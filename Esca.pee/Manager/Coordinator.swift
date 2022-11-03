@@ -29,7 +29,7 @@ class Coordinator: ObservableObject {
         path.append(Destination.lockerPassword)
     }
     
-    func cardZoom () {
+    func LetterZoom () {
         path.append(Destination.letterZoom)
     }
 }

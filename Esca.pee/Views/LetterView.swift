@@ -12,7 +12,7 @@ struct LetterView: View {
     
     var body: some View {
         Image(ImageConstants.shared.TWO_SPADES)
-            .resizable()
+            
         
     }
 }
