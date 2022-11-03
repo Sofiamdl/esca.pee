@@ -42,7 +42,7 @@ class CollectableManager: ObservableObject {
     var itemArrayName: [String] = []
 
 
-    @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
+    @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.MILK)
     @Published var screwdriver: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.SCREWDRIVER)
     @Published var adapter: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.ADAPTER)
     @Published var paper: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.PAPER)
