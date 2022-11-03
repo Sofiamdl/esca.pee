@@ -62,6 +62,16 @@ class CollectableManager: ObservableObject {
         defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
     }
     
+    func cleanGame() {
+        let defaults = UserDefaults.standard
+        itemArray = []
+        itemsUsed = []
+        itemArrayAux = []
+        defaults.set([], forKey: DefaultsKeys.keyOne)
+        defaults.set([], forKey: DefaultsKeys.keyTwo)
+
+    }
+    
     func useItem(item: Collectable) {
         itemsUsed.append(item.image)
         let defaults = UserDefaults.standard

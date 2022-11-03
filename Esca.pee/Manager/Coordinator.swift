@@ -20,8 +20,12 @@ class Coordinator: ObservableObject {
 
     @Published var path: [Destination] = []
 
-    func gotoHomePage() {
+    func gotoBackOnepage() {
         path.removeLast(1)
+    }
+    
+    func gotoHomePage() {
+        path.removeLast(path.count)
     }
 
     func tilePuzzle() {
