@@ -53,8 +53,6 @@ struct BoardTileView: View {
             Image(ImageConstants.shared.EIGHT_HEARTS)
                 .resizable()
                 .scaledToFit()
-                .frame(minHeight: UIScreen.main.bounds.height - 30)
-                
         } else {
             InnerTile(number: tile.number, dimension: tile.dimension, imagePath: tile.imagePath)
                 .offset(boardView.offsets[tile.position]!)
@@ -104,7 +102,7 @@ struct TilePuzzleView: View {
     
     var body: some View {
         Spacer().frame(height:2.0)
-        BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .center)
+        BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .topLeading)
     }
     
     private func frameSize() -> CGFloat {
