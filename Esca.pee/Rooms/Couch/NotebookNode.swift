@@ -10,11 +10,14 @@ import SpriteKit
 class NotebookNode: SKNode, AnyNode {
     private var image: SKSpriteNode?
     private var roomWidth: CGFloat!
+    
+    var object: CollectableManager?
     var coordinator: Coordinator?
     
-    init(_ roomWidth: CGFloat, coordinator: Coordinator) {
+    init(_ roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.NOTEBOOK)
+        self.object = object
         self.roomWidth = roomWidth
         self.coordinator = coordinator
         setupNode()
@@ -38,6 +41,6 @@ class NotebookNode: SKNode, AnyNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.coordinator?.tilePuzzle()
+            self.coordinator?.tilePuzzle()
     }
 }

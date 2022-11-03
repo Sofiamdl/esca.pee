@@ -19,19 +19,22 @@ struct InnerTile: View {
     let imagePath: String
     
     var body: some View {
-//        Image(imagePath)
-//            .resizable()
-//            .shadow(color: Color.white, radius: 1.0, x: 1.0, y: 1.0)
-//            .scaledToFit()
-//            .frame(width: CGFloat(BoardConstants.tileSize), height: CGFloat(BoardConstants.tileSize), alignment: .center)
-//            .cornerRadius(5.0)
-            
         Text("\(number)")
             .font(Font.custom("HelveticaNeue", size: 25.0))
             .shadow(color: Color.white, radius: 1.0, x: 1.0, y: 1.0)
             .foregroundColor(Color.black)
             .frame(width: CGFloat(BoardConstants.tileSize), height: CGFloat(BoardConstants.tileSize), alignment: .center)
+            .background(color())
             .cornerRadius(5.0)
+    }
+    
+    private func color() -> Color {
+        // Desiring a hue between 0.44 and 0.56
+        let start = 0.45
+        let range = 0.12
+        let offset = range / Double(dimension * dimension) * Double(number)
+        let hue = start + offset
+        return Color.init(hue: hue, saturation: 1.0, brightness: 1.0)
     }
 }
 
@@ -46,16 +49,21 @@ struct BoardTileView: View {
         self.board = boardView.model
     }
     var body: some View {
-        InnerTile(number: tile.number, dimension: tile.dimension, imagePath: tile.imagePath)
-            .offset(boardView.offsets[tile.position]!)
-            .onTapGesture {
-                board.move(position: tile.position) { position, solved in
-                    if(solved) {
-                        print("SOLVED!")
+        if board.object!.puzzleSolved{
+            Image(ImageConstants.shared.EIGHT_HEARTS)
+                .resizable()
+                .scaledToFit()
+                .frame(minHeight: UIScreen.main.bounds.height - 30)
+                
+        } else {
+            InnerTile(number: tile.number, dimension: tile.dimension, imagePath: tile.imagePath)
+                .offset(boardView.offsets[tile.position]!)
+                .onTapGesture {
+                    board.move(position: tile.position) { position, solved in
                     }
                 }
-            }
-            .animation(.slide())
+                .animation(.slide())
+        }
     }
 }
 
@@ -92,16 +100,17 @@ struct BoardView: View {
 
 struct TilePuzzleView: View {
     @EnvironmentObject var boardModel: Board
+    @EnvironmentObject private var coordinator: Coordinator
+    
     var body: some View {
-        VStack(alignment: .center, spacing: 5.0) {
-            Spacer().frame(height:2.0)
-            BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .topLeading)
-                
-        }.background(Color("Board"))
+        Spacer().frame(height:2.0)
+        BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .center)
     }
     
     private func frameSize() -> CGFloat {
         return CGFloat(boardModel.dimension) * BoardConstants.tileSize + CGFloat(boardModel.dimension - 1) * BoardConstants.spacing + 6.0
     }
-    
+    private func progressColor(_ progress: Double) -> Color {
+        return Color(red: 0.0, green: 1.0, blue: 0.0)
+    }
 }

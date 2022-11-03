@@ -10,13 +10,11 @@ import SpriteKit
 class CouchNode: SKNode, AnyNode {
     private var image: SKSpriteNode?
     private var roomWidth: CGFloat!
-    var object: CollectableManager?
     
-    init (_ roomWidth: CGFloat, object: CollectableManager){
+    init (_ roomWidth: CGFloat){
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.COUCH)
         self.roomWidth = roomWidth
-        self.object = object
         self.isUserInteractionEnabled = true
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())

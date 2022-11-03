@@ -8,6 +8,9 @@ import SwiftUI
 
 class Board: ObservableObject, Equatable, CustomStringConvertible {
     
+    var object: CollectableManager?
+    var coordinator: Coordinator?
+    
     enum State {
         case solved
         case unsolved
@@ -23,8 +26,8 @@ class Board: ObservableObject, Equatable, CustomStringConvertible {
     
     static func == (lhs: Board, rhs: Board) -> Bool {
         return lhs.dimension == rhs.dimension
-            && lhs.slotPosition == rhs.slotPosition
-            && lhs.manhattan == rhs.manhattan
+        && lhs.slotPosition == rhs.slotPosition
+        && lhs.manhattan == rhs.manhattan
     }
     
     
@@ -78,7 +81,9 @@ class Board: ObservableObject, Equatable, CustomStringConvertible {
     }
     
     // initialize a board of size dimension in its solved state
-    init(dimension: Int) {
+    init(dimension: Int, object: CollectableManager, coordinator: Coordinator) {
+        self.object = object
+        self.coordinator = coordinator
         self.dimension = dimension
         let count:Int = Int(pow(Double(dimension),2)) - 1
         var t:[Tile] = []
@@ -140,8 +145,9 @@ class Board: ObservableObject, Equatable, CustomStringConvertible {
             tileLookup.removeValue(forKey: slotPosition)
             tileLookup[tile.position] = tile
             
-            if hamming == 0 {
+            if hamming == 0 && self.state != .randomizing {
                 self.state =  .solved
+                object!.puzzleSolved = true
             }
             
             // Let the view update itself
@@ -215,7 +221,7 @@ class Board: ObservableObject, Equatable, CustomStringConvertible {
         // slot is in the same row with tile and the adjascent
         if ((tile.position - 1) / dimension == (slotPosition - 1) / dimension) && (abs(tile.position - slotPosition) == 1) {
             return true
-        // slot is in the same column with tile and they are adjascent
+            // slot is in the same column with tile and they are adjascent
         } else if abs(tile.position - slotPosition) == dimension {
             return true
         }
@@ -284,5 +290,5 @@ class Board: ObservableObject, Equatable, CustomStringConvertible {
             return manhattan
         }
     }
-
+    
 }

@@ -44,7 +44,7 @@ class Coordinator: ObservableObject {
         path.append(Destination.gameView)
     }
     
-    func LetterZoom () {
+    func letterZoom () {
         path.append(Destination.letterZoom)
     }
     

@@ -38,7 +38,7 @@ class CollectableManager: ObservableObject {
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
     @Published var itemsUsed: [String] = []
-    var itemArrayName: [String] = []
+    @Published var puzzleSolved = false
 
 
     @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.MILK)
@@ -54,7 +54,6 @@ class CollectableManager: ObservableObject {
     @Published var fixed_cable: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.FIXED_CABLE)
     @Published var mug_card: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_CARD)
 
-    
     func addToArray(item: Collectable) {
         itemArray.append(item)
         itemArrayAux.append(item.image)

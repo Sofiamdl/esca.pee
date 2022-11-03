@@ -49,9 +49,7 @@ class LunchboxNode: SKNode, AnyNode {
             addChild(self.image ?? SKSpriteNode())
             didUserTap.toggle()
         } else {
-            print("tocou")
-            self.coordinator?.LetterZoom()
-            
+            self.coordinator?.letterZoom()
         }
         
     }
