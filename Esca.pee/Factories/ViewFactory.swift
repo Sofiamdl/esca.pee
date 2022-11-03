@@ -16,6 +16,9 @@ class ViewFactory {
             TilePuzzleView().environmentObject(Board(dimension: 3))
         case .lockerPassword:
             LockerPasswordView()
+        case .gameView:
+            GameView()
+                .navigationBarBackButtonHidden(true)
         case .computer:
             ComputerView().background(Color.ui.computerGreen)
         case .letterZoom:

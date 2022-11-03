@@ -20,16 +20,15 @@ struct escapeeApp: App {
         WindowGroup {
             if #available(iOS 16.0, *) {
                 NavigationStack(path: $coordinator.path) {
-                    GameView()
+                    HomeScreenView()
                     .navigationDestination(for: Destination.self) { destination in
                         ViewFactory.viewForDestination(destination)
-                        
                     }
                 }
                 .environmentObject(coordinator)
                 .environmentObject(collectableManager)
             } else {
-                GameView()
+                HomeScreenView()
             }
         }
     }

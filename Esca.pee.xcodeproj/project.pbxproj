@@ -58,6 +58,7 @@
 		BFEDAA7D28FF221F00652C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */; };
 		C01FAE56291313B900A490CB /* MilkNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE55291313B900A490CB /* MilkNode.swift */; };
 		C01FAE5829131F1100A490CB /* BrokenCableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE5729131F1100A490CB /* BrokenCableNode.swift */; };
+		C01FAE5A2913349200A490CB /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE592913349200A490CB /* HomeScreenView.swift */; };
 		C09E0D8A290AF9D30090495B /* CoffeeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D89290AF9D30090495B /* CoffeeNode.swift */; };
 		C09E0D8E291039660090495B /* AdapterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8D291039660090495B /* AdapterNode.swift */; };
 		C09E0D902910397F0090495B /* LunchboxNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E0D8F2910397F0090495B /* LunchboxNode.swift */; };
@@ -123,6 +124,7 @@
 		BFEDAA7C28FF221F00652C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C01FAE55291313B900A490CB /* MilkNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkNode.swift; sourceTree = "<group>"; };
 		C01FAE5729131F1100A490CB /* BrokenCableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrokenCableNode.swift; sourceTree = "<group>"; };
+		C01FAE592913349200A490CB /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		C09E0D89290AF9D30090495B /* CoffeeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeNode.swift; sourceTree = "<group>"; };
 		C09E0D8D291039660090495B /* AdapterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterNode.swift; sourceTree = "<group>"; };
 		C09E0D8F2910397F0090495B /* LunchboxNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchboxNode.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				0D04AB32291041EA00176A62 /* TilePuzzleView.swift */,
 				BFEDAA7728FF221C00652C50 /* GameView.swift */,
 				BFB2A21D2911B52E0074EF8F /* LockerPasswordView.swift */,
+				C01FAE592913349200A490CB /* HomeScreenView.swift */,
 				BFB2A221291351AD0074EF8F /* ComputerView.swift */,
 				0D472C5B29134826009820C0 /* LetterView.swift */,
 			);
@@ -447,6 +450,7 @@
 				0D472C5C29134826009820C0 /* LetterView.swift in Sources */,
 				0D04AB20290B01E300176A62 /* CouchNode.swift in Sources */,
 				0D04AB3E2911A8C400176A62 /* NotebookNode.swift in Sources */,
+				C01FAE5A2913349200A490CB /* HomeScreenView.swift in Sources */,
 				C01FAE56291313B900A490CB /* MilkNode.swift in Sources */,
 				BFB2A2102911997E0074EF8F /* SecondeBalconyNode.swift in Sources */,
 				BFB2A21229119C0F0074EF8F /* BalconyNode.swift in Sources */,
