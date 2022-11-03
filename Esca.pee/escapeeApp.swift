@@ -31,11 +31,7 @@ struct escapeeApp: App {
                             ComputerView().background(Color.ui.computerGreen)
                         case .letterZoom:
                             LetterView()
-                        case .notebookZoom:
-                            NotebookView()
                         }
-                        
-                        
                     }
                 }
                 .environmentObject(coordinator)

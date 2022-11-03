@@ -41,10 +41,6 @@ class NotebookNode: SKNode, AnyNode {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if object!.puzzleSolved {
-//            self.coordinator?.notebookZoom()
-//        } else {
             self.coordinator?.tilePuzzle()
-//        }
     }
 }

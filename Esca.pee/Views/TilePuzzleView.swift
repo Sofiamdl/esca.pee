@@ -54,6 +54,7 @@ struct BoardTileView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(minHeight: UIScreen.main.bounds.height - 30)
+                
         } else {
             InnerTile(number: tile.number, dimension: tile.dimension, imagePath: tile.imagePath)
                 .offset(boardView.offsets[tile.position]!)
@@ -102,11 +103,8 @@ struct TilePuzzleView: View {
     @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
-        VStack(alignment: .center, spacing: 5.0) {
-            Spacer().frame(height:2.0)
-            BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .topLeading)
-            
-        }.background(Color("Board"))
+        Spacer().frame(height:2.0)
+        BoardView(model: boardModel).frame(width: frameSize(), height: frameSize(), alignment: .center)
     }
     
     private func frameSize() -> CGFloat {
@@ -114,9 +112,5 @@ struct TilePuzzleView: View {
     }
     private func progressColor(_ progress: Double) -> Color {
         return Color(red: 0.0, green: 1.0, blue: 0.0)
-    }
-    
-    func getBoard () -> Board {
-        return boardModel
     }
 }
