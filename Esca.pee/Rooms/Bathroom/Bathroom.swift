@@ -12,6 +12,7 @@ struct Bathroom: View {
     @EnvironmentObject private var object: CollectableManager
     @EnvironmentObject private var coordinator: Coordinator
 
+    
     var body: some View {
         RoomComponent(imagePath: ImageConstants.shared.BACKGROUND_BATHROOM, scene: BathroomScene(with: imageWidth, object: object, coordinator: coordinator), setImageWidth: setWidth)
     }
