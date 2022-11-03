@@ -8,14 +8,20 @@
 import SpriteKit
 
 class BathroomNode: SKNode, AnyNode {
+    
     private var image: SKSpriteNode?
     private var roomWidth: CGFloat!
     
-    init (_ roomWidth: CGFloat){
+    var object: CollectableManager?
+    var coordinator: Coordinator?
+
+    init (_ roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator){
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.DOOR)
         self.roomWidth = roomWidth
-        
+        self.coordinator = coordinator
+        self.object = object
+        self.isUserInteractionEnabled = true
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
     }
@@ -30,5 +36,19 @@ class BathroomNode: SKNode, AnyNode {
     
     func setupSize() {
         self.image!.size = CGSize(width: 0.13.vw(roomWidth), height: 0.599.vh)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let i = object!.findIndex(item: object!.key)
+        if (i != -1) {
+            if (object!.itemArray[i].isClicked) {
+                print("Cabo")
+                object?.cleanGame()
+                coordinator?.gotoHomePage()
+            }
+        }
+        // mandar esse objeto pro itemDock -- como?
+        // implementar isso em todos os coletáveis
+        
     }
 }
