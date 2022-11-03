@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "lockers-lamps.png",
+      "filename" : "lunchbox-open.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "lockers-lamps@2x.png",
+      "filename" : "lunchbox-open@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "lockers-lamps@3x.png",
+      "filename" : "lunchbox-open@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
