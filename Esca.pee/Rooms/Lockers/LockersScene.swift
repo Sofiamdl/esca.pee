@@ -23,7 +23,11 @@ class LockersScene: SKScene {
         addChild(LockersNode(roomWidth, coordinator: coordinator, object: object))
         addChild(TableCouchNode(roomWidth))
         addChild(ChairsNode(roomWidth))
-        addChild(CoffeeNode(roomWidth, object: object))
+        if (!(object.itemArray.contains(where: {$0.image == object.mug_coffee.image})) &&
+            !(object.itemArray.contains(where: {$0.image == object.mug_card.image})) &&
+            !(object.itemsUsed.contains(where: {$0 == object.mug_coffee.image}))) {
+            addChild(CoffeeNode(roomWidth, object: object))
+        }
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
