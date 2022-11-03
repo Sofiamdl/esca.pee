@@ -62,7 +62,7 @@ struct LockerPasswordView: View {
                     }
                     
                     Button(action: {
-                        if (answer == "12345") {
+                        if (answer == "288266") {
                             object.addToArray(item: object.key)
                             coordinator.gotoHomePage()
                         } else {
