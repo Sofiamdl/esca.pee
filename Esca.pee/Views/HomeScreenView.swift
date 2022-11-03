@@ -9,7 +9,6 @@ import SwiftUI
 
 struct HomeScreenView: View {
     
-    @State private var isShowingGameView = false
     @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
@@ -17,14 +16,25 @@ struct HomeScreenView: View {
             VStack {
                 Spacer()
                 Image("Escapee")
+                    .padding(.top, 40)
                 Spacer()
                     .frame(height: 30)
                     Button(action: {
                         coordinator.goToGameView()
                     }) {
                         Image("play-button")
+                            .padding(.bottom, 40)
                     }
+                HStack {
+                    Image("settings-button")
+                        .padding(.leading, 550)
+                    Image("credits-button")
+                        .resizable()
+                        .frame(height: 57)
+                        .aspectRatio(contentMode: .fit)
+                }
                 Spacer()
+                
             }
         }
         .background(
