@@ -16,6 +16,8 @@ class ViewFactory {
             TilePuzzleView().environmentObject(Board(dimension: 3))
         case .lockerPassword:
             LockerPasswordView()
+        case .letterZoom:
+            LetterView()
         }
     }
 }

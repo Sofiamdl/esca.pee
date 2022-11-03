@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "background-lockers.png",
+      "filename" : "background-lockers2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "background-lockers@2x.png",
+      "filename" : "background-lockers2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "background-lockers@3x.png",
+      "filename" : "background-lockers2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

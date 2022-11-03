@@ -10,6 +10,7 @@ import SwiftUI
 enum Destination: String {
     case tilePuzzle
     case lockerPassword
+    case letterZoom
 }
 
 class Coordinator: ObservableObject {
@@ -26,5 +27,9 @@ class Coordinator: ObservableObject {
 
     func lockerPassword() {
         path.append(Destination.lockerPassword)
+    }
+    
+    func cardZoom () {
+        path.append(Destination.letterZoom)
     }
 }

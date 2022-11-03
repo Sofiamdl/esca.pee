@@ -14,7 +14,6 @@ class ImageConstants {
     let BACKGROUND_LAB = "background-lab"
     let BACKGROUND_COUCH = "background-couch"
     let BACKGROUND_LOCKERS = "background-lockers"
-    let BACKGROUND_LOCKERS2 = "background-lockers2"
     let BACKGROUND_KITCHEN = "background-kitchen"
     let BACKGROUND_BATHROOM = "background-bathroom"
     let BACKGROUND_LOCKER_SCREEN = "background-locker"

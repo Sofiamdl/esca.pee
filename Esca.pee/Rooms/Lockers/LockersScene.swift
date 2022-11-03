@@ -23,8 +23,6 @@ class LockersScene: SKScene {
         addChild(LockersNode(roomWidth, coordinator: coordinator, object: object))
         addChild(TableCouchNode(roomWidth))
         addChild(ChairsNode(roomWidth))
-        addChild(PoufNode(roomWidth))
-        //addChild(NotebookNode(roomWidth, coordinator: coordinator))
         addChild(CoffeeNode(roomWidth, object: object))
     }
     required init?(coder aDecoder: NSCoder) {
