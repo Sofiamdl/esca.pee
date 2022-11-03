@@ -63,6 +63,12 @@ class CollectableManager: ObservableObject {
         defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
     }
     
+    func useItem(item: Collectable) {
+        itemsUsed.append(item.image)
+        let defaults = UserDefaults.standard
+        defaults.set(itemsUsed, forKey: DefaultsKeys.keyTwo)
+    }
+    
     func removeFromArray(item: Collectable) {
         for (index, _) in itemArray.enumerated() {
             if item.image == self.itemArray[index].image {
@@ -77,14 +83,7 @@ class CollectableManager: ObservableObject {
         }
     }
     
-// func changeClicked(_ index: Int) {
-//        print(String(describing:itemArray))
-//    func getId(item: Collectable) -> Int {
-//        return item.id
-//    }
-    
     func changeClicked(_ index: Int) {
-        //print(String(describing:itemArray))
         var isClicked = false
         
         for (i, _) in itemArray.enumerated() {
@@ -95,5 +94,14 @@ class CollectableManager: ObservableObject {
         if (!isClicked) {
             itemArray[index].isClicked = true
         }
+    }
+    
+    func findIndex(item: Collectable) -> Int {
+        for (index, _) in itemArray.enumerated() {
+            if item.image == itemArray[index].image {
+                return index
+            }
+        }
+        return (-1)
     }
 }

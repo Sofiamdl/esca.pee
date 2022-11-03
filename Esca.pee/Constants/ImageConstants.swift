@@ -21,6 +21,7 @@ class ImageConstants {
     //Lab Scene
     let TABLE = "table"
     let COMPUTER = "computer"
+    let SOLVED_COMPUTER = "solved-computer"
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
