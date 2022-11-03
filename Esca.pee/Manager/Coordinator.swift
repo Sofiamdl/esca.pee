@@ -11,6 +11,7 @@ enum Destination: String {
     case tilePuzzle
     case lockerPassword
     case computer
+    case letterZoom
 }
 
 class Coordinator: ObservableObject {
@@ -31,5 +32,9 @@ class Coordinator: ObservableObject {
 
     func lockerPassword() {
         path.append(Destination.lockerPassword)
+    }
+    
+    func LetterZoom () {
+        path.append(Destination.letterZoom)
     }
 }

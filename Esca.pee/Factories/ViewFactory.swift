@@ -18,6 +18,8 @@ class ViewFactory {
             LockerPasswordView()
         case .computer:
             ComputerView().background(Color.ui.computerGreen)
+        case .letterZoom:
+            LetterView()
         }
     }
 }

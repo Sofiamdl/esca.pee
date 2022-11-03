@@ -62,13 +62,13 @@ class ImageConstants {
     let TABLE_KITCHEN = "kitchen-table"
     let CABINET = "cabinet"
     let MILK = "milk"
+    let LUNCHBOX = "lunchbox"
+    let LUNCHBOX_OPEN = "lunchbox-open"
 
     //Zoom-screens
     let ZOOM_TABLE = "zoom-table"
     let SCREWDRIVER = "screwdriver"
     let ADAPTER = "adapter"
-    let LUNCHBOX = "lunchbox"
-    let LUNCHBOX_OPEN = "lunch-box-opened"
     let DOMINO = "domino"
     let TAPE = "tape"
     
@@ -79,6 +79,6 @@ class ImageConstants {
     let MUG_POWDER = "mug-powder"
     
     //Key
-    let KEY = "key"
+    let KEY = "bathroom-key"
 
 }
