@@ -14,7 +14,6 @@ class ImageConstants {
     let BACKGROUND_LAB = "background-lab"
     let BACKGROUND_COUCH = "background-couch"
     let BACKGROUND_LOCKERS = "background-lockers"
-    let BACKGROUND_LOCKERS2 = "background-lockers2"
     let BACKGROUND_KITCHEN = "background-kitchen"
     let BACKGROUND_BATHROOM = "background-bathroom"
     let BACKGROUND_LOCKER_SCREEN = "background-locker"
@@ -22,6 +21,7 @@ class ImageConstants {
     //Lab Scene
     let TABLE = "table"
     let COMPUTER = "computer"
+    let SOLVED_COMPUTER = "solved-computer"
     let SECONDE_TABLE = "second-table"
     let THIRD_TABLE = "third-table"
     let BOOKSHELF = "bookshelf"
@@ -62,13 +62,13 @@ class ImageConstants {
     let TABLE_KITCHEN = "kitchen-table"
     let CABINET = "cabinet"
     let MILK = "milk"
+    let LUNCHBOX = "lunchbox"
+    let LUNCHBOX_OPEN = "lunchbox-open"
 
     //Zoom-screens
     let ZOOM_TABLE = "zoom-table"
     let SCREWDRIVER = "screwdriver"
     let ADAPTER = "adapter"
-    let LUNCHBOX = "lunchbox"
-    let LUNCHBOX_OPEN = "lunch-box-opened"
     let DOMINO = "domino"
     let TAPE = "tape"
     
@@ -79,6 +79,6 @@ class ImageConstants {
     let MUG_POWDER = "mug-powder"
     
     //Key
-    let KEY = "key"
+    let KEY = "bathroom-key"
 
 }

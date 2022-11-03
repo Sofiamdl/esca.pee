@@ -22,32 +22,27 @@ class CollectableManager: ObservableObject {
                 itemArrayAux.append(element as! String)
             }
         }
+        if let elementTwo = defaults.array(forKey: DefaultsKeys.keyTwo) {
+            for element in elementTwo {
+                itemsUsed.append(element as! String)
+            }
+        }
     }
-
-//    enum Coffee: String {
-//        case powder
-//        case full
-//        case withMilk
-//        case empty
-//    }
     
     struct Collectable {
         var isClicked: Bool
         var image: String
     }
     
-//    struct CoffeeCollectable {
-//        var coffee: Coffee
-//        var
-//
-//    }
+    
     
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
+    @Published var itemsUsed: [String] = []
     var itemArrayName: [String] = []
 
 
-    @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.COFFEEMUG)
+    @Published var milk: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.MILK)
     @Published var screwdriver: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.SCREWDRIVER)
     @Published var adapter: Collectable = Collectable(isClicked: false,  image: ImageConstants.shared.ADAPTER)
     @Published var paper: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.PAPER)
@@ -68,12 +63,27 @@ class CollectableManager: ObservableObject {
         defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
     }
     
-//    func getId(item: Collectable) -> Int {
-//        return item.id
-//    }
+    func useItem(item: Collectable) {
+        itemsUsed.append(item.image)
+        let defaults = UserDefaults.standard
+        defaults.set(itemsUsed, forKey: DefaultsKeys.keyTwo)
+    }
+    
+    func removeFromArray(item: Collectable) {
+        for (index, _) in itemArray.enumerated() {
+            if item.image == self.itemArray[index].image {
+                itemsUsed.append(item.image)
+                itemArray.remove(at: index)
+                itemArrayAux.remove(at: index)
+                let defaults = UserDefaults.standard
+                defaults.set(itemsUsed, forKey: DefaultsKeys.keyTwo)
+                defaults.set(itemArrayAux, forKey: DefaultsKeys.keyOne)
+                return
+            }
+        }
+    }
     
     func changeClicked(_ index: Int) {
-        //print(String(describing:itemArray))
         var isClicked = false
         
         for (i, _) in itemArray.enumerated() {
@@ -85,5 +95,13 @@ class CollectableManager: ObservableObject {
             itemArray[index].isClicked = true
         }
     }
-
+    
+    func findIndex(item: Collectable) -> Int {
+        for (index, _) in itemArray.enumerated() {
+            if item.image == itemArray[index].image {
+                return index
+            }
+        }
+        return (-1)
+    }
 }

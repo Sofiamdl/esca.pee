@@ -11,11 +11,12 @@ import SpriteKit
 class CouchScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+    var object: CollectableManager?
     var coordinator: Coordinator?
-    
-    init(with roomWidth: CGFloat, coordinator: Coordinator) {
+
+    init(with roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator) {
         super.init(size: CGSize(width: roomWidth, height: self.roomHeight))
-        self.scaleMode = .fill
+        self.object = object
         self.coordinator = coordinator
         self.roomWidth = roomWidth
         //addChild(ChairsNode(roomWidth))
@@ -31,7 +32,7 @@ class CouchScene: SKScene {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.backgroundColor = .clear
         view.backgroundColor = SKColor.clear.withAlphaComponent(0.0)
-        addChild(CouchNode(roomWidth))
+        addChild(CouchNode(roomWidth, object: object!))
     }
     
 }

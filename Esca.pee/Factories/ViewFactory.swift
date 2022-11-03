@@ -19,6 +19,10 @@ class ViewFactory {
         case .gameView:
             GameView()
                 .navigationBarBackButtonHidden(true)
+        case .computer:
+            ComputerView().background(Color.ui.computerGreen)
+        case .letterZoom:
+            LetterView()
         }
     }
 }

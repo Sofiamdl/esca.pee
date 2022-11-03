@@ -13,13 +13,15 @@ class LunchboxNode: SKNode, AnyNode {
     private var image : SKSpriteNode?
     private var roomWidth : CGFloat!
     var object: CollectableManager?
+    var coordinator: Coordinator?
     var didUserTap = false
 
-    init(_ roomWidth: CGFloat, object: CollectableManager) {
+    init(_ roomWidth: CGFloat, object: CollectableManager, coordinator: Coordinator) {
         super.init()
         self.image = SKSpriteNode(imageNamed: ImageConstants.shared.LUNCHBOX)
         self.isUserInteractionEnabled = true
         self.roomWidth = roomWidth
+        self.coordinator = coordinator
         self.object = object
         setupNode()
         self.addChild(self.image ?? SKSpriteNode())
@@ -42,16 +44,15 @@ class LunchboxNode: SKNode, AnyNode {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !didUserTap {
             self.image?.removeFromParent()
-            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.PAPER)
+            self.image = SKSpriteNode(imageNamed: ImageConstants.shared.LUNCHBOX_OPEN)
             setupNode()
             addChild(self.image ?? SKSpriteNode())
             didUserTap.toggle()
         } else {
-            self.removeFromParent()
-            object!.addToArray(item: object!.paper)
+            print("tocou")
+            self.coordinator?.LetterZoom()
+            
         }
-        
-        //click no papel dá pra outra tela
         
     }
 }
