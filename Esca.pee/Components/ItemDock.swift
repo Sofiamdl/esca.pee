@@ -39,7 +39,7 @@ struct ItemDock: View {
                         if object.itemArray[index].isClicked {
                             Text(object.itemArray[index].image)
                                 .bold()
-                                .foregroundColor(Color.red)
+                                .foregroundColor(Color.white)
                                 .frame(width: 0.3.vh, height: 0.02.vh)
                                 .padding([.bottom, .top, .trailing, .leading], 10)
                                 .background(Color.black.opacity(0.5))

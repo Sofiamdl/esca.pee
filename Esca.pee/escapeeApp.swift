@@ -33,6 +33,8 @@ struct escapeeApp: App {
                             LetterView()
                         case .cardMugView:
                             CardMugView()
+                        case .gameView:
+                            GameView().navigationBarBackButtonHidden(true)
                         }
                     }
                 }
