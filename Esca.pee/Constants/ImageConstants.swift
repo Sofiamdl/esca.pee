@@ -81,5 +81,6 @@ class ImageConstants {
 
     //Key
     let KEY = "bathroom-key"
+    let OPEN_PAPER = "open-paper"
 
 }
