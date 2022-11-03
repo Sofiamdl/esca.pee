@@ -11,6 +11,8 @@ import SpriteKit
 class BathroomScene: SKScene {
     var roomWidth: CGFloat!
     let roomHeight: CGFloat = UIScreen.main.bounds.height
+        
+    
     
     var object: CollectableManager?
     var coordinator: Coordinator?
