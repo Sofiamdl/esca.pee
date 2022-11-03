@@ -27,11 +27,11 @@ struct HomeScreenView: View {
                     }
                 HStack {
                     Image("settings-button")
-                        .padding(.leading, 550)
+                        .padding(.leading, 535)
                     Image("credits-button")
                         .resizable()
                         .frame(height: 57)
-                        .aspectRatio(contentMode: .fit)
+                        //.aspectRatio(contentMode: .fit)
                 }
                 Spacer()
                 
