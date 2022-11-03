@@ -34,11 +34,11 @@ class BrokenCableNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.25.vw(roomWidth), y: 0.41.vh)
+        self.position = CGPoint(x: 0.95.vw(roomWidth), y: 0.1.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.08.vw(roomWidth), height: 0.12.vh)
+        self.image!.size = CGSize(width: 0.07.vw(roomWidth), height: 0.1.vh)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
