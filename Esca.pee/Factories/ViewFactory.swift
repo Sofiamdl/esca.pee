@@ -23,6 +23,8 @@ class ViewFactory {
             ComputerView().background(Color.ui.computerGreen)
         case .letterZoom:
             LetterView()
+        case .cardMugView:
+            CardMugView()
         }
     }
 }

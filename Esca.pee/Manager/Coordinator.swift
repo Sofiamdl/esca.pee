@@ -13,6 +13,7 @@ enum Destination: String {
     case gameView
     case computer
     case letterZoom
+    case cardMugView
 }
 
 class Coordinator: ObservableObject {
@@ -20,7 +21,7 @@ class Coordinator: ObservableObject {
     @Published var path: [Destination] = []
 
     func gotoHomePage() {
-        path.removeLast(path.count)
+        path.removeLast(1)
     }
 
     func tilePuzzle() {
@@ -42,4 +43,9 @@ class Coordinator: ObservableObject {
     func LetterZoom () {
         path.append(Destination.letterZoom)
     }
+    
+    func cardMugView() {
+        path.append(Destination.cardMugView)
+    }
+
 }

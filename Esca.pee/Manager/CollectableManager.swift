@@ -35,7 +35,6 @@ class CollectableManager: ObservableObject {
     }
     
     
-    
     @Published var itemArray: [Collectable] = []
     var itemArrayAux: [String] = []
     @Published var itemsUsed: [String] = []
@@ -51,9 +50,9 @@ class CollectableManager: ObservableObject {
     @Published var domino: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.DOMINO)
     @Published var tape: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.TAPE)
     @Published var key: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.KEY)
-    @Published var mug_coffee: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_COFFEE)
+    @Published var mug_coffee: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_BLEND)
     @Published var fixed_cable: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.FIXED_CABLE)
-//    @Published var coffee: Coffee = .empty
+    @Published var mug_card: Collectable = Collectable(isClicked: false, image: ImageConstants.shared.MUG_CARD)
 
     
     func addToArray(item: Collectable) {
