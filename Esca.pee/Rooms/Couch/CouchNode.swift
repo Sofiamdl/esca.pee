@@ -25,10 +25,10 @@ class CouchNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.38.vw(roomWidth), y: 0.62.vh)
+        self.position = CGPoint(x: 0.4.vw(roomWidth), y: 0.65.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.64.vw(roomWidth), height: 0.50.vh)
+        self.image!.size = CGSize(width: 0.45.vw(roomWidth), height: 0.47.vh)
     }
 }

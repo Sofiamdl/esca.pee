@@ -49,7 +49,7 @@ struct BoardTileView: View {
         self.board = boardView.model
     }
     var body: some View {
-        if !board.object!.puzzleSolved{
+        if board.object!.puzzleSolved{
             Image(ImageConstants.shared.EIGHT_HEARTS)
                 .resizable()
                 .scaledToFit()
