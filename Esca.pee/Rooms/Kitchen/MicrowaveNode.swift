@@ -55,7 +55,7 @@ class MicrowaveNode: SKNode, AnyNode {
                 }
             }
         } else {
-            if (object!.itemsUsed.contains(where: {$0 == object!.mug_coffee.image}) && !(object!.itemArray.contains(where: {$0.image == object!.mug_coffee.image}))) {
+            if (object!.itemsUsed.contains(where: {$0 == object!.mug_card.image}) && !(object!.itemArray.contains(where: {$0.image == object!.mug_coffee.image}))) {
                 object!.addToArray(item: object!.mug_card)
                 self.image?.removeFromParent()
                 self.image = SKSpriteNode(imageNamed: ImageConstants.shared.MICROWAVE)
