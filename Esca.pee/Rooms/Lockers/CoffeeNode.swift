@@ -52,6 +52,7 @@ class CoffeeNode: SKNode, AnyNode {
                     setupNode()
                     addChild(self.image ?? SKSpriteNode())
                     object!.useItem(item: object!.milk)
+                    object!.removeFromArray(item: object!.milk)
                     didUserTap.toggle()
                 }
             }
