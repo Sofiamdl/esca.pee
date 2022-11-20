@@ -19,7 +19,6 @@
 		0D04AB31291041BC00176A62 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB30291041BC00176A62 /* Errors.swift */; };
 		0D04AB33291041EA00176A62 /* TilePuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB32291041EA00176A62 /* TilePuzzleView.swift */; };
 		0D04AB3A29119D1B00176A62 /* LockersNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3929119D1B00176A62 /* LockersNode.swift */; };
-		0D04AB3C29119D4400176A62 /* LampsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3B29119D4400176A62 /* LampsNode.swift */; };
 		0D04AB3E2911A8C400176A62 /* NotebookNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04AB3D2911A8C400176A62 /* NotebookNode.swift */; };
 		0D3ABBF929085C4F0075223A /* ThirdTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */; };
 		0D3ABBFB2908650B0075223A /* BookshelfNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3ABBFA2908650B0075223A /* BookshelfNode.swift */; };
@@ -86,7 +85,6 @@
 		0D04AB30291041BC00176A62 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		0D04AB32291041EA00176A62 /* TilePuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilePuzzleView.swift; sourceTree = "<group>"; };
 		0D04AB3929119D1B00176A62 /* LockersNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockersNode.swift; sourceTree = "<group>"; };
-		0D04AB3B29119D4400176A62 /* LampsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampsNode.swift; sourceTree = "<group>"; };
 		0D04AB3D2911A8C400176A62 /* NotebookNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookNode.swift; sourceTree = "<group>"; };
 		0D3ABBF829085C4F0075223A /* ThirdTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTableNode.swift; sourceTree = "<group>"; };
 		0D3ABBFA2908650B0075223A /* BookshelfNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfNode.swift; sourceTree = "<group>"; };
@@ -206,9 +204,9 @@
 				BF82936329022B8900CFC0F8 /* Lockers.swift */,
 				0D04AB21290C141900176A62 /* LockersScene.swift */,
 				0D04AB23290C221E00176A62 /* TableCouchNode.swift */,
+				C09E0D89290AF9D30090495B /* CoffeeNode.swift */,
 				0D04AB25290C378700176A62 /* ChairsNode.swift */,
 				0D04AB3929119D1B00176A62 /* LockersNode.swift */,
-				0D04AB3B29119D4400176A62 /* LampsNode.swift */,
 			);
 			path = Lockers;
 			sourceTree = "<group>";
@@ -225,7 +223,6 @@
 				BFB2A21729119DBC0074EF8F /* MicrowaveNode.swift */,
 				BFB2A21929119DFF0074EF8F /* RefrigeratorNode.swift */,
 				C09E0D8F2910397F0090495B /* LunchboxNode.swift */,
-				C09E0D89290AF9D30090495B /* CoffeeNode.swift */,
 				BFB2A21B29119F340074EF8F /* CabinetNode.swift */,
 				C01FAE55291313B900A490CB /* MilkNode.swift */,
 			);
@@ -430,7 +427,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1CEBE62908351800F0D8B6 /* SecondeTableNode.swift in Sources */,
-				0D04AB3C29119D4400176A62 /* LampsNode.swift in Sources */,
 				BF82936A290243B000CFC0F8 /* ImageConstants.swift in Sources */,
 				C0A427EE290860C40036CFB6 /* ToolModel.swift in Sources */,
 				0D04AB2F2910415D00176A62 /* BoardConstants.swift in Sources */,

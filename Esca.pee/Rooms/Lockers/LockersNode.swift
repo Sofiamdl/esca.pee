@@ -27,11 +27,11 @@ class LockersNode: SKNode, AnyNode {
         fatalError("init(coder:) has not been implemented")
     }
     func setupPosition() {
-        self.position = CGPoint(x: 0.5.vw(roomWidth), y: 0.56.vh)
+        self.position = CGPoint(x: 0.4.vw(roomWidth), y: 0.578.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.5.vw(roomWidth), height: 0.52.vh)
+        self.image!.size = CGSize(width: 0.38.vw(roomWidth), height: 0.52.vh)
     }
     
     func setupAdditionalConfiguration() {

@@ -25,10 +25,10 @@ class ChairsNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.48.vw(roomWidth), y: 0.19.vh)
+        self.position = CGPoint(x: 0.38.vw(roomWidth), y: 0.19.vh)
     }
     
     func setupSize() {
-        self.image!.size = CGSize(width: 0.22.vw(roomWidth), height: 0.43.vh)
+        self.image!.size = CGSize(width: 0.18.vw(roomWidth), height: 0.49.vh)
     }
 }

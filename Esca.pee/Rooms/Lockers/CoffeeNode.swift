@@ -35,7 +35,7 @@ class CoffeeNode: SKNode, AnyNode {
     }
     
     func setupPosition() {
-        self.position = CGPoint(x: 0.52.vw(roomWidth), y: 0.28.vh)
+        self.position = CGPoint(x: 0.415.vw(roomWidth), y: 0.28.vh)
     }
     
     func setupSize() {

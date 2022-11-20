@@ -31,6 +31,7 @@ class ImageConstants {
     
     //Couch Scene
     let COUCH = "couch"
+    let NOTEBOOK = "notebook"
     
     //Cards
     let TWO_SPADES = "two-of-spades"
@@ -44,8 +45,6 @@ class ImageConstants {
     let TABLE_COUCH = "lockers-couch"
     let CHAIRS = "chairs"
     let POUF = "pouf"
-    let NOTEBOOK = "notebook"
-    let LAMPS = "lockers-lamps"
     let LOCKERS = "lockers"
     
     //Collectables
